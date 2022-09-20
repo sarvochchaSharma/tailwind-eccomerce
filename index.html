@@ -15,21 +15,25 @@
     <!-- TOP NAVIGATION BAR -->
     <nav class="top-nav h-16 bg-slate-500 flex items-center justify-between">
       <!-- LOGO -->
-      <div class="logo flex-none">
-        <img src="./img/nile-logo.png" alt="" class="w-24 h-10 cursor-pointer">
-      </div>
+        <div class="logo flex-none">
+          <a href=""><img src="./img/nile-logo.png" alt="" class="w-24 h-10 cursor-pointer"></a>
+        </div>
       <!-- ADDRESS -->
       <div class="address flex-none mx-auto cursor-pointer">
         <div class="location-marker md:hidden">
-          <img src="./img/location-marker.png" alt="" class="w-6 h-6">
+          <a href="">
+            <img src="./img/location-marker.png" alt="" class="w-6 h-6">
+          </a>
         </div>
         <div class="flex flex-row hidden md:inline-flex">
           <div>
-            <img src="./img/location-marker.png" alt="" class="w-5 h-5 mt-6 mr-1">
+            <a href=""><img src="./img/location-marker.png" alt="" class="w-5 h-5 mt-6 mr-1"></a>
           </div>
           <div class="flex flex-col">
-            <div class="text-gray-400">Hello</div>
-            <div class="text-white text-xl">Select your address</div>
+            <a href="">
+              <div class="text-gray-400">Hello</div>
+              <div class="text-white text-xl">Select your address</div>
+            </a>
           </div>
         </div>
       </div>
@@ -46,28 +50,30 @@
       <div class="account mx-auto flex-none">
         <div class="account-options flex flex-row space-x-4 items-center ">
           <div class="login hidden lg:inline-block rounded-md bg-orange-600 p-2 cursor-pointer">
-            Login
+            <a href="">Login</a>
           </div>
           <div class="signup hidden lg:inline-block rounded-md bg-orange-400 p-2 cursor-pointer">
-            Signup
+            <a href="">Signup</a>
           </div>
           <div class="user-picture-large-screen flex-none">
-            <img src="./img/user.png" alt="" class="w-8 h-8 hidden lg:inline-block cursor-pointer">
+            <a href=""><img src="./img/user.png" alt="" class="w-8 h-8 hidden lg:inline-block cursor-pointer"></a>
           </div>
         </div>
         <div class="user-picture-small-screen">
-          <img src="./img/user.png" alt="" class="w-8 h-8 hidden md:inline-block lg:hidden cursor-pointer">
+          <a href=""><img src="./img/user.png" alt="" class="w-8 h-8 hidden md:inline-block lg:hidden cursor-pointer"></a>
         </div>
       </div>
       <!-- CART -->
-      <div class="cart flex flex-row hidden lg:inline-flex space-x-2 rounded-md bg-orange-400 p-1 cursor-pointer">
-        <div class="cart-logo">
-          <img src="./img/shopping-cart.png" alt="" class="w-8 h-8">
+      <a href="">
+        <div class="cart flex flex-row hidden lg:inline-flex space-x-2 rounded-md bg-orange-400 p-1 cursor-pointer">
+          <div class="cart-logo">
+            <img src="./img/shopping-cart.png" alt="" class="w-8 h-8">
+          </div>
+          <div class="cart-text pt-2 text-xl">
+            Cart
+          </div>
         </div>
-        <div class="cart-text pt-2 text-xl">
-          Cart
-        </div>
-      </div>
+      </a>
       <!-- MENU -->
       <div class="menu flex-none md:hidden">
         <img src="img/menu.png" class="h-8 w-8 mr-4">
@@ -77,28 +83,126 @@
 
     <!-- CATEGORIES NAVIGATION BAR -->
     <nav class="categories-nav bg-slate-400 h-12 flex items-center justify-between">
-      <div class="flex space-x-2 ml-6">
-        <div class="all-btn-img">
-          <img src="./img/menu.png" alt="" class="h-6 w-6">
+        <div class="flex space-x-2 ml-6 cursor-pointer">
+          <div class="all-btn-img">
+            <img src="./img/menu.png" alt="" class="h-6 w-6">
+          </div>
+          <div class="all-btn-text font-bold">
+            All
+          </div>
         </div>
-        <div class="all-btn-text font-bold">
-          All
-        </div>
-      </div>
-      <div class="flex-none cursor-pointer">Best Sellers</div>
-      <div class="flex-none cursor-pointer">Mobiles</div>
-      <div class="flex-none cursor-pointer">Laptops</div>
-      <div class="flex-none cursor-pointer">Books</div>
-      <div class="flex-none cursor-pointer">What's New</div>
-      <div class="hidden md:inline-block flex-none cursor-pointer">Electronics</div>
-      <div class="hidden md:inline-block flex-none cursor-pointer">Home</div>
-      <div class="hidden lg:inline-block flex-none cursor-pointer">Kitchen</div>
-      <div class="hidden lg:inline-block flex-none cursor-pointer">Computers</div>
-      <div class="hidden lg:inline-block flex-none cursor-pointer">Fashion</div>
-      <div class="hidden lg:inline-block flex-none cursor-pointer">Toys</div>
-      <div class="hidden lg:inline-block flex-none cursor-pointer mr-8">Sell</div>
+      <div class="flex-none cursor-pointer"><a href=""> Best Sellers </a></div>
+      <div class="flex-none cursor-pointer"><a href=""> Mobiles </a></div>
+      <div class="flex-none cursor-pointer"><a href=""> Laptops </a></div>
+      <div class="flex-none cursor-pointer"><a href=""> Books </a></div>
+      <div class="flex-none cursor-pointer"><a href=""> What's New </a></div>
+      <div class="hidden md:inline-block flex-none cursor-pointer"><a href=""> Electronics </a></div>
+      <div class="hidden md:inline-block flex-none cursor-pointer"><a href=""> Home </a></div>
+      <div class="hidden lg:inline-block flex-none cursor-pointer"><a href=""> Kitchen </a></div>
+      <div class="hidden lg:inline-block flex-none cursor-pointer"><a href=""> Computers </a></div>
+      <div class="hidden lg:inline-block flex-none cursor-pointer"><a href=""> Fashion </a></div>
+      <div class="hidden lg:inline-block flex-none cursor-pointer"><a href=""> Toys </a></div>
+      <div class="hidden lg:inline-block flex-none cursor-pointer mr-8"><a href=""> Sell </a></div>
     </nav>
   </header>
 
+  <main class="bg-sky-300">
+    <!-- FIRST SHOP -->
+    <div class="first-shopping-items flex flex-col md:flex-row  md:justify-between md:space-x-4 mx-auto">
+
+      <!-- PHONES -->
+      <div class="up-your-phone border flex-col flex-none bg-white md:ml-10">
+        <div class="up-your-phone-text text-2xl font-bold text-black">Upgrade your phone</div>
+        <div class="up-your-phone-phones-list flex flex-wrap">
+          <div class="brand-1 w-1/2">
+            <div class="brand-image">
+              <img src="./img/apple-logo.png" alt="" class="w-20 h-20">
+            </div>
+            <div class="brand-start-price">From ₹ 49,999</div>
+          </div>
+          <div class="brand-2 w-1/2">
+            <div class="brand-image">
+              <img src="./img/samsung-logo.png" alt="" class="w-20 h-20">
+            </div>
+            <div class="brand-price-start mx-auto">From ₹ 19,999</div>
+          </div>
+          <div class="brand-3 w-1/2">
+            <div class="brand-image">
+              <img src="./img/google-logo.png" alt="" class="w-20 h-20">
+            </div>
+            <div class="brand-price-start mx-auto">From ₹ 26,999</div>
+          </div>
+          <div class="brand-4 w-1/2">
+            <div class="brand-image">
+              <img src="./img/xiaomi-logo.png" alt="" class="w-20 h-20">
+            </div>
+            <div class="brand-price-start mx-auto">From ₹ 9,999</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CLOTHING -->
+      <div class="new-clothes border flex-col flex-none bg-white">
+        <div class="new-clothes-text text-2xl font-bold text-black">Looking for clothes?</div>
+        <div class="clothing-item-list flex flex-wrap">
+          <div class="tshirt w-1/2">
+            <div class="clothing-item-image">
+              <img src="./img/clothing-icons/tshirt.png" alt="" class="w-20 h-20">
+            </div>
+            <div class="clothing-item-start-price">From ₹ 499</div>
+          </div>
+          <div class="trouser w-1/2">
+            <div class="clothing-item-image">
+              <img src="./img/clothing-icons/trousers.png" alt="" class="w-20 h-20">
+            </div>
+            <div class="clothing-item-start-price">From ₹ 399</div>
+          </div>
+          <div class="shirt w-1/2">
+            <div class="clothing-item-image">
+              <img src="./img/clothing-icons/shirt.png" alt="" class="w-20 h-20">
+            </div>
+            <div class="clothing-item-start-price">From ₹ 699</div>
+          </div>
+          <div class="tshirt w-1/2">
+            <div class="clothing-item-image">
+              <img src="./img/clothing-icons/cap.png" alt="" class="w-20 h-20">
+            </div>
+            <div class="clothing-item-start-price">From ₹ 199</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- COMPUTER ACCESSORIES -->
+      <div class="computer-accessories border flex-col flex-none bg-white md:mr-10">
+        <div class="computer-accessories-text text-2xl font-bold text-black">Computer Accessories</div>
+        <div class="computer-accessories-list flex flex-wrap">
+          <div class="cpu w-1/2">
+            <div class="computer-accessory-image">
+              <img src="./img/computer-accessory/cpu-icon.png" alt="" class="w-20 h-20">
+            </div>
+            <div class="computer-accessory-start-price">From ₹ 12,999</div>
+          </div>
+          <div class="gpu w-1/2">
+            <div class="computer-accessory-image">
+              <img src="./img/computer-accessory/gpu-icon.png" alt="" class="w-20 h-20">
+            </div>
+            <div class="computer-accessory-start-price">From ₹ 18,999</div>
+          </div>
+          <div class="shirt w-1/2">
+            <div class="computer-accessory-image">
+              <img src="./img/computer-accessory/ssd-icon.png" alt="" class="w-20 h-20">
+            </div>
+            <div class="computer-accessory-start-price">From ₹ 2,499</div>
+          </div>
+          <div class="tshirt w-1/2">
+            <div class="computer-accessory-image">
+              <img src="./img/computer-accessory/ram-icon.png" alt="" class="w-20 h-20">
+            </div>
+            <div class="computer-accessory-start-price">From ₹ 1,799</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
