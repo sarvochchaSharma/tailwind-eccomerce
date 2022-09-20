@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Nile</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="flex flex-col w-full text-white">
+    <!-- TOP NAVIGATION BAR -->
+    <nav class="top-nav h-16 bg-slate-500 flex items-center justify-between">
+      <!-- LOGO -->
+      <div class="logo flex-none">
+        <img src="./img/nile-logo.png" alt="" class="w-24 h-10 cursor-pointer">
+      </div>
+      <!-- ADDRESS -->
+      <div class="address flex-none mx-auto cursor-pointer">
+        <div class="location-marker md:hidden">
+          <img src="./img/location-marker.png" alt="" class="w-6 h-6">
+        </div>
+        <div class="flex flex-row hidden md:inline-flex">
+          <div>
+            <img src="./img/location-marker.png" alt="" class="w-5 h-5 mt-6 mr-1">
+          </div>
+          <div class="flex flex-col">
+            <div class="text-gray-400">Hello</div>
+            <div class="text-white text-xl">Select your address</div>
+          </div>
+        </div>
+      </div>
+      <!-- SEARCH BOX -->
+      <div class="search mx-auto flex flex-row flex-none items-center">
+        <div class="search-bar ">
+          <input type="search" name="" id="" placeholder=" Search" class="w-96 h-12 rounded-md pl-2 focus:ring focus:ring-orange-400 focus:outline-none text-black text-xl font-mono">
+        </div>
+        <div class="search-image bg-orange-400 p-2 h-12">
+          <img src="./img/search.png" alt="" class="w-8 h-8 cursor-pointer">
+        </div>
+      </div>
+      <!-- ACCOUNT -->
+      <div class="account mx-auto flex-none">
+        <div class="account-options flex flex-row space-x-4 items-center ">
+          <div class="login hidden lg:inline-block rounded-md bg-orange-600 p-2 cursor-pointer">
+            Login
+          </div>
+          <div class="signup hidden lg:inline-block rounded-md bg-orange-400 p-2 cursor-pointer">
+            Signup
+          </div>
+          <div class="user-picture-large-screen flex-none">
+            <img src="./img/user.png" alt="" class="w-8 h-8 hidden lg:inline-block cursor-pointer">
+          </div>
+        </div>
+        <div class="user-picture-small-screen">
+          <img src="./img/user.png" alt="" class="w-8 h-8 hidden md:inline-block lg:hidden cursor-pointer">
+        </div>
+      </div>
+      <!-- CART -->
+      <div class="cart flex flex-row hidden lg:inline-flex space-x-2 rounded-md bg-orange-400 p-1 cursor-pointer">
+        <div class="cart-logo">
+          <img src="./img/shopping-cart.png" alt="" class="w-8 h-8">
+        </div>
+        <div class="cart-text pt-2 text-xl">
+          Cart
+        </div>
+      </div>
+      <!-- MENU -->
+      <div class="menu flex-none md:hidden">
+        <img src="img/menu.png" class="h-8 w-8 mr-4">
+      </div>
+    </nav>
+    <!-- TOP NAVIGATION BAR ENDS HERE -->
+
+    <!-- CATEGORIES NAVIGATION BAR -->
+    <nav class="categories-nav bg-slate-400 h-12 flex items-center justify-between">
+      <div class="flex space-x-2 ml-6">
+        <div class="all-btn-img">
+          <img src="./img/menu.png" alt="" class="h-6 w-6">
+        </div>
+        <div class="all-btn-text font-bold">
+          All
+        </div>
+      </div>
+      <div class="flex-none cursor-pointer">Best Sellers</div>
+      <div class="flex-none cursor-pointer">Mobiles</div>
+      <div class="flex-none cursor-pointer">Laptops</div>
+      <div class="flex-none cursor-pointer">Books</div>
+      <div class="flex-none cursor-pointer">What's New</div>
+      <div class="hidden md:inline-block flex-none cursor-pointer">Electronics</div>
+      <div class="hidden md:inline-block flex-none cursor-pointer">Home</div>
+      <div class="hidden lg:inline-block flex-none cursor-pointer">Kitchen</div>
+      <div class="hidden lg:inline-block flex-none cursor-pointer">Computers</div>
+      <div class="hidden lg:inline-block flex-none cursor-pointer">Fashion</div>
+      <div class="hidden lg:inline-block flex-none cursor-pointer">Toys</div>
+      <div class="hidden lg:inline-block flex-none cursor-pointer mr-8">Sell</div>
+    </nav>
+  </header>
+
+</body>
+</html>
