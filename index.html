@@ -15,14 +15,14 @@
     DEVICE NOT SUPPORTED!!
   </div>
 
-  <div class="whole-content hidden start-supporting:block">
+  <div class="whole-content hidden start-supporting:block bg-gradient-to-b from-sky-700 to-sky-200 flex-col">
     <!-- HEADER -->
     <header class="flex flex-col w-full text-white">
       <!-- TOP NAVIGATION BAR -->
       <nav class="top-nav h-16 bg-slate-500 flex items-center justify-between">
         <!-- LOGO -->
           <div class="logo flex-none">
-            <a href=""><img src="./img/nile-logo.png" alt="" class="w-24 h-10 cursor-pointer"></a>
+            <a href="index.html"><img src="./img/ui/nile-logo.png" alt="" class="w-24 h-10 cursor-pointer"></a>
           </div>
         <!-- ADDRESS -->
         <div class="address flex-none mx-auto cursor-pointer">
@@ -31,9 +31,9 @@
               <img src="./img/location-marker.png" alt="" class="w-6 h-6">
             </a>
           </div> -->
-          <div class="flex flex-row inline-flex">
+          <div class="flex flex-row">
             <div>
-              <a href=""><img src="./img/location-marker.png" alt="" class="w-5 h-5 mt-6 mr-1"></a>
+              <a href=""><img src="./img/ui/location-marker.png" alt="" class="w-5 h-5 mt-6 mr-1"></a>
             </div>
             <div class="flex flex-col">
               <a href="">
@@ -49,31 +49,31 @@
             <input type="search" name="" id="" placeholder=" Search" class="w-96 h-12 rounded-md pl-2 focus:ring focus:ring-orange-400 focus:outline-none text-black text-xl font-mono">
           </div>
           <div class="search-image bg-orange-400 p-2 h-12 hidden md:inline-block">
-            <img src="./img/search.png" alt="" class="w-8 h-8 cursor-pointer">
+            <img src="./img/ui/search.png" alt="" class="w-8 h-8 cursor-pointer">
           </div>
         </div>
         <!-- ACCOUNT -->
         <div class="account mx-auto flex-none">
           <div class="account-options flex flex-row space-x-4 items-center ">
             <div class="login hidden lg:inline-block rounded-md bg-orange-600 p-2 cursor-pointer">
-              <a href="">Login</a>
+              <a href="./signin.html">Signin</a>
             </div>
             <div class="signup hidden lg:inline-block rounded-md bg-orange-400 p-2 cursor-pointer">
-              <a href="">Signup</a>
+              <a href="./signup.html">Signup</a>
             </div>
             <div class="user-picture-large-screen flex-none">
-              <a href=""><img src="./img/user.png" alt="" class="w-8 h-8 hidden lg:inline-block cursor-pointer"></a>
+              <a href=""><img src="./img/ui/user.png" alt="" class="w-8 h-8 hidden lg:inline-block cursor-pointer"></a>
             </div>
           </div>
           <div class="user-picture-small-screen">
-            <a href=""><img src="./img/user.png" alt="" class="w-8 h-8 hidden md:inline-block lg:hidden cursor-pointer"></a>
+            <a href=""><img src="./img/ui/user.png" alt="" class="w-8 h-8 hidden md:inline-block lg:hidden cursor-pointer"></a>
           </div>
         </div>
         <!-- CART -->
-        <a href="">
+        <a href="./cart.html">
           <div class="cart flex flex-row hidden lg:inline-flex space-x-2 rounded-md bg-orange-400 p-1 cursor-pointer">
             <div class="cart-logo">
-              <img src="./img/shopping-cart.png" alt="" class="w-8 h-8">
+              <img src="./img/ui/shopping-cart.png" alt="" class="w-8 h-8">
             </div>
             <div class="cart-text pt-2 text-xl">
               Cart
@@ -81,196 +81,136 @@
           </div>
         </a>
         <!-- MENU -->
-        <div class="menu flex-none md:hidden">
-          <img src="img/menu.png" class="h-8 w-8 mr-4">
-        </div>
+        <a href="">
+          <div class="menu flex-none md:hidden">
+            <img src="./img/ui/menu.png" class="h-8 w-8 mr-4">
+          </div>
+        </a>
       </nav>
       <!-- TOP NAVIGATION BAR ENDS HERE -->
 
       <!-- CATEGORIES NAVIGATION BAR -->
       <nav class="categories-nav bg-slate-400 h-12 flex items-center justify-between">
-          <div class="flex space-x-2 ml-6 cursor-pointer">
-            <div class="all-btn-img">
-              <img src="./img/menu.png" alt="" class="h-6 w-6">
-            </div>
-            <div class="all-btn-text font-bold">
-              All
-            </div>
-          </div>
-        <div class="flex-none cursor-pointer"><a href=""> Best Sellers </a></div>
-        <div class="flex-none cursor-pointer"><a href=""> Mobiles </a></div>
-        <div class="flex-none hidden md:inline-block cursor-pointer"><a href=""> Laptops </a></div>
-        <div class="flex-none hidden md:inline-block cursor-pointer"><a href=""> Books </a></div>
-        <div class="flex-none hidden md:inline-block cursor-pointer"><a href=""> What's New </a></div>
-        <div class="hidden md:inline-block flex-none cursor-pointer"><a href=""> Electronics </a></div>
-        <div class="hidden md:inline-block flex-none cursor-pointer"><a href=""> Home </a></div>
-        <div class="hidden lg:inline-block flex-none cursor-pointer"><a href=""> Kitchen </a></div>
-        <div class="hidden lg:inline-block flex-none cursor-pointer"><a href=""> Computers </a></div>
-        <div class="hidden lg:inline-block flex-none cursor-pointer"><a href=""> Fashion </a></div>
-        <div class="hidden lg:inline-block flex-none cursor-pointer"><a href=""> Toys </a></div>
-        <div class="hidden lg:inline-block flex-none cursor-pointer mr-8"><a href=""> Sell </a></div>
+        <button class="flex space-x-2 ml-6 cursor-pointer">
+          <a class="all-btn-img">
+            <img src="./img/ui/menu.png" alt="" class="h-6 w-6">
+          </a>
+          <a class="all-btn-text font-bold">
+            All
+          </a>
+        </button>
+        <div class="flex-none cursor-pointer"><a href="./best-sellers.html"> Best Sellers </a></div>
+        <div class="flex-none cursor-pointer"><a href="./mobiles.html"> Mobiles </a></div>
+        <div class="flex-none hidden md:inline-block cursor-pointer"><a href="./laptops.html"> Laptops </a></div>
+        <div class="flex-none hidden md:inline-block cursor-pointer"><a href="./books.html"> Books </a></div>
+        <div class="flex-none hidden md:inline-block cursor-pointer"><a href="./customer-service.html"> Customer Service </a></div>
+        <div class="hidden md:inline-block flex-none cursor-pointer"><a href="./electronics.html"> Electronics </a></div>
+        <div class="hidden md:inline-block flex-none cursor-pointer"><a href="./home-and-kitchen.html"> Home & Kitchen</a></div>
+        <div class="hidden lg:inline-block flex-none cursor-pointer"><a href="./computers.html"> Computers </a></div>
+        <div class="hidden lg:inline-block flex-none cursor-pointer"><a href="./fashion.html"> Fashion </a></div>
+        <div class="hidden lg:inline-block flex-none cursor-pointer"><a href="./toys.html"> Toys </a></div>
+        <div class="hidden lg:inline-block flex-none cursor-pointer mr-8"><a href="./sell.html"> Sell </a></div>
       </nav>
+      <!-- CATEGORIES NAVIGATION BAR ENDS HERE-->
     </header>
 
-    <main class="bg-gradient-to-b from-sky-700 to-sky-200 flex-col">
+    <main class=" flex-col mx-auto lg:ml-12 lg:mr-24 py-10 space-y-10">
 
       <!-- FIRST ROW SHOPS -->
-      <div class="first-row-shops flex flex-col lg:flex-row px-8 lg:space-x-4">
+      <div class="first-row-shops flex flex-col lg:flex-row">
 
         <!-- PHONES -->
-        <div class="card flex-col flex-none rounded-2xl my-8 bg-white lg:w-1/3">
+        <div class="card flex-col flex-none rounded-2xl bg-white mx-6 lg:w-1/4 lg:mx-0">
           <div class="card-head-text text-2xl text-black font-bold pl-4 h-10">Upgrade your phone</div>
           <div class="card-items w-full h-[calc(100%-60px)] flex-col">
             <div class="row-1 w-full h-1/2 flex space-x-10 px-4">
-              <div class="item-1 w-1/2 h-full flex-col hover:bg-gray-300">
-                <div class="item-img">
-                  <img src="./img/tech/apple-logo.png" alt="" class="w-auto h-auto mx-auto pt-4">
+              <a class="item-1 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer" href="./pages/apple-phones.html">
+                <div class="item-img p-4">
+                  <img src="./img/tech/apple-logo.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">From ₹ 49,999</div>
-              </div>
-              <div class="item-2 w-1/2 h-full flex-col hover:bg-gray-300">
-                <div class="item-img">
-                  <img src="./img/tech/samsung-logo.png" alt="" class="w-auto h-auto mx-auto pt-4">
+                <div class="item-text 2xl:text-3xl text-center">From ₹49,999</div>
+              </a>
+              <a class="item-2 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer" href="./pages/samsung-phones.html">
+                <div class="item-img p-4">
+                  <img src="./img/tech/samsung-logo.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">From ₹ 19,999</div>
-              </div>
+                <div class="item-text 2xl:text-3xl text-center">From ₹19,999</div>
+              </a>
             </div>
             <div class="row-2 w-full h-1/2 flex mt-2.5 space-x-10 px-4">
-              <div class="item-1 w-1/2 h-full flex-col hover:bg-gray-300">
-                <div class="item-img">
-                  <img src="./img/tech/google-logo.png" alt="" class="w-auto h-auto mx-auto pt-4">
+              <a class="item-1 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer" href="./pages/samsung-phones.html">
+                <div class="item-img p-4">
+                  <img src="./img/tech/google-logo.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">From ₹ 26,999</div>
-              </div>
-              <div class="item-2 w-1/2 h-full flex-col hover:bg-gray-300">
-                <div class="item-img">
-                  <img src="./img/tech/xiaomi-logo.png" alt="" class="w-auto h-auto mx-auto pt-4">
+                <div class="item-text 2xl:text-3xl text-center">From ₹26,999</div>
+              </a>
+              <a class="item-2 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer" href="./pages/samsung-phones.html">
+                <div class="item-img p-4">
+                  <img src="./img/tech/xiaomi-logo.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">From ₹ 9,999</div>
-              </div>
+                <div class="item-text 2xl:text-3xl text-center">From ₹9,999</div>
+              </a>
             </div>
           </div>
         </div>          
         
         <!-- CLOTHING -->
-        <div class="card flex-col flex-none rounded-2xl my-8 bg-white lg:w-1/3">
+        <div class="card flex-col flex-none rounded-2xl bg-white mx-6 lg:w-1/4 mt-10 lg:mt-0 lg:ml-4 lg:mx-0">
           <div class="card-head-text text-2xl text-black font-bold pl-4 h-10">Looking for clothes?</div>
           <div class="card-items w-full h-[calc(100%-60px)] flex-col">
             <div class="row-1 w-full h-1/2 flex space-x-10 px-4">
-              <div class="item-1 w-1/2 h-full flex-col hover:bg-gray-300">
-                <div class="item-img">
-                  <img src="./img/clothing-icons/tshirt.png" alt="" class="w-auto h-auto mx-auto pt-4">
+              <a class="item-1 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
+                <div class="item-img p-4">
+                  <img src="./img/clothing-icons/tshirt.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">From ₹ 499</div>
-              </div>
-              <div class="item-2 w-1/2 h-full flex-col hover:bg-gray-300">
-                <div class="item-img">
-                  <img src="./img/clothing-icons/trousers.png" alt="" class="w-auto h-auto mx-auto pt-4">
+                <div class="item-text 2xl:text-3xl text-center">From ₹499</div>
+              </a>
+              <a class="item-2 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
+                <div class="item-img p-4">
+                  <img src="./img/clothing-icons/trousers.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">From ₹ 399</div>
-              </div>
+                <div class="item-text 2xl:text-3xl text-center">From ₹399</div>
+              </a>
             </div>
             <div class="row-2 w-full h-1/2 flex mt-2.5 space-x-10 px-4">
-              <div class="item-1 w-1/2 h-full flex-col hover:bg-gray-300">
-                <div class="item-img">
-                  <img src="./img/clothing-icons/shirt.png" alt="" class="w-auto h-auto mx-auto pt-4">
+              <a class="item-1 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
+                <div class="item-img p-4">
+                  <img src="./img/clothing-icons/shirt.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">From ₹ 699</div>
-              </div>
-              <div class="item-2 w-1/2 h-full flex-col hover:bg-gray-300">
-                <div class="item-img">
-                  <img src="./img/clothing-icons/cap.png" alt="" class="w-auto h-auto mx-auto pt-4">
+                <div class="item-text 2xl:text-3xl text-center">From ₹699</div>
+              </a>
+              <a class="item-2 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
+                <div class="item-img p-4">
+                  <img src="./img/clothing-icons/cap.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">From ₹ 199</div>
-              </div>
+                <div class="item-text 2xl:text-3xl text-center">From ₹199</div>
+              </a>
             </div>
           </div>
         </div>
         
-        <!-- COMPUTER PARTS -->
-        <div class="card flex-col flex-none rounded-2xl my-8 bg-white lg:w-1/3">
-          <div class="card-head-text text-2xl text-black font-bold pl-4 h-10">Computer Parts</div>
-          <div class="card-items w-full h-[calc(100%-60px)] flex-col">
-            <div class="row-1 w-full h-1/2 flex space-x-10 px-4">
-              <div class="item-1 w-1/2 h-full flex-col hover:bg-gray-300">
-                <div class="item-img">
-                  <img src="./img/computer-accessory/cpu-icon.png" alt="" class="w-auto h-auto mx-auto pt-4">
-                </div>
-                <div class="item-text 2xl:text-3xl text-center">From ₹ 12,999</div>
-              </div>
-              <div class="item-2 w-1/2 h-full flex-col hover:bg-gray-300">
-                <div class="item-img">
-                  <img src="./img/computer-accessory/gpu-icon.png" alt="" class="w-auto h-auto mx-auto pt-4">
-                </div>
-                <div class="item-text 2xl:text-3xl text-center">From ₹ 18,999</div>
-              </div>
-            </div>
-            <div class="row-2 w-full h-1/2 flex mt-2.5 space-x-10 px-4">
-              <div class="item-1 w-1/2 h-full flex-col hover:bg-gray-300">
-                <div class="item-img">
-                  <img src="./img/computer-accessory/ssd-icon.png" alt="" class="w-auto h-auto mx-auto pt-4">
-                </div>
-                <div class="item-text 2xl:text-3xl text-center">From ₹ 2,499</div>
-              </div>
-              <div class="item-2 w-1/2 h-full flex-col hover:bg-gray-300">
-                <div class="item-img">
-                  <img src="./img/computer-accessory/ram-icon.png" alt="" class="w-auto h-auto mx-auto pt-4">
-                </div>
-                <div class="item-text 2xl:text-3xl text-center">From ₹ 1,799</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- FIRST ROW SHOP ENDS -->
-
-      <!-- SECOND ROW SHOPS -->
-     <div class="second-row-shops flex flex-col lg:flex-row px-8 lg:space-x-4 mx-auto mr-6">
-        <!-- TRAVEL SECTION -->
-        <div class="card flex-col flex-none rounded-2xl my-8 bg-white lg:w-1/4">
-          <div class="card-head-text text-2xl text-black font-bold pl-4 h-15">Travel | Book your tickets</div>
-          <div class="card-items w-full h-[calc(100%-80px)] flex-col">
-            <div class="row-1 w-full h-1/2 flex space-x-10 px-4">
-              <div class="item-1 w-1/2 h-full flex-col hover:bg-gray-300">
-                <div class="item-img">
-                  <img src="./img/tickets/airplane-lticket-logo.png" alt="" class="w-auto h-auto px-2 pt-4">
-                </div>
-                <div class="item-text 2xl:text-3xl pl-2">Flight tickets</div>
-              </div>
-              <div class="item-2 w-1/2 h-full flex-col hover:bg-gray-300">
-                <div class="item-img">
-                  <img src="./img/tickets/train-ticket-logo.png" alt="" class="w-auto h-auto px-2 pt-4">
-                </div>
-                <div class="item-text 2xl:text-3xl pl-2">Trains tickets</div>
-              </div>
-            </div>
-            <div class="row-2 w-full h-1/2 flex mt-2.5 space-x-10 px-4">
-              <div class="item-1 w-1/2 h-full flex-col hover:bg-gray-300">
-                <div class="item-img">
-                  <img src="./img/tickets/bus-ticket-logo.png" alt="" class="w-auto h-auto px-2 pt-4">
-                </div>
-                <div class="item-text 2xl:text-3xl px-2">Bus tickets</div>
-              </div>
-              <div class="item-2 w-1/2 h-full flex-col hover:bg-gray-300">
-                <div class="item-img">
-                  <img src="./img/tickets/luggage-logo.png" alt="" class="w-auto h-auto px-2 pt-4">
-                </div>
-                <div class="item-text 2xl:text-3xl">Travel products</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- 50% OFF -->
-        <div class="fifty-percent-off flex-col flex-none rounded-2xl my-8 bg-white hover:bg-gray-300 lg:w-1/4">
+        <!-- MOBILES AND LAPTOPS -->
+        <a class="fifty-percent-off flex-col flex-none rounded-2xl bg-white hover:bg-gray-300 cursor-pointer mx-6 lg:w-1/4 mt-10 lg:mt-0 lg:ml-4 lg:mx-0">
           <div class="fifty-percent-off-text text-black text-4xl font-bold text-center">
             Upto 50% Off <br> <span class="font-medium text-xl text-gray-500">on laptops & phones</span>
           </div>
           <div class="fifty-percent-off-product-img">
             <img src="./img/tech/devices.png" alt="" class="w-full h-full p-10">
           </div>
+        </a>
+
+        <!-- SIGNIN -->
+        <div class="signin-card flex-none flex-col rounded-2xl bg-white mx-6 lg:w-1/4 h-40 mt-10 lg:mt-0 lg:ml-4 lg:mx-0">
+          <div class="signin-text text-2xl text-black font-bold pl-4 pt- 10 h-10">Sign in for your best experience</div>
+          <div class="signin-btn bg-yellow-400 mt-10 mx-auto w-40 text-center rounded-md cursor-pointer hover:bg-yellow-600"><a href="">Sign in</a></div>
         </div>
+      </div>
+      <!-- FIRST ROW SHOP ENDS -->
+
+      <!-- SECOND ROW SHOPS -->
+      <div class="second-row-shops flex flex-col lg:flex-row">
         <!-- TOOLS -->
-        <div class="tools flex-col flex-none rounded-2xl my-8 bg-white hover:bg-gray-300 lg:w-1/4">
+        <div class="tools flex-col flex-none rounded-2xl bg-white hover:bg-gray-300 cursor-pointer mx-6 lg:w-1/4 lg:mt-0 lg:mx-0">
           <div class="tools-text text-black text-4xl font-bold text-center">
             Upto 70% Off <br> <span class="font-medium text-xl text-gray-500">on professional tools</span>
           </div>
@@ -278,205 +218,302 @@
             <img src="./img/extra/tool-box.png" alt="" class="w-full h-full p-10">
           </div>
         </div>
+        <!-- TRAVEL -->
+        <div class="card flex-col flex-none rounded-2xl bg-white mt-10 lg:w-1/4 mx-6 lg:mt-0 lg:ml-4 lg:mx-0">
+          <div class="card-head-text text-2xl text-black font-bold pl-4 h-15">Travel | Book your tickets</div>
+          <div class="card-items w-full h-[calc(100%-80px)] flex-col">
+            <div class="row-1 w-full h-1/2 flex space-x-10 px-4">
+              <a class="item-1 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
+                <div class="item-img p-4">
+                  <img src="./img/tickets/airplane-lticket-logo.png" alt="" class="w-auto h-auto object-contain">
+                </div>
+                <div class="item-text 2xl:text-3xl text-center">Flight tickets</div>
+              </a>
+              <a class="item-2 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
+                <div class="item-img p-4">
+                  <img src="./img/tickets/train-ticket-logo.png" alt="" class="w-auto h-auto object-contain">
+                </div>
+                <div class="item-text 2xl:text-3xl text-center">Trains tickets</div>
+              </a>
+            </div>
+            <div class="row-2 w-full h-1/2 flex mt-2.5 space-x-10 px-4">
+              <a class="item-1 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
+                <div class="item-img p-4">
+                  <img src="./img/tickets/bus-ticket-logo.png" alt="" class="w-auto h-auto object-contain">
+                </div>
+                <div class="item-text 2xl:text-3xl text-center">Bus tickets</div>
+              </a>
+              <a class="item-2 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
+                <div class="item-img p-4">
+                  <img src="./img/tickets/luggage-logo.png" alt="" class="w-auto h-auto object-contain">
+                </div>
+                <div class="item-text 2xl:text-3xl text-center">Trolley Bags</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- COMPUTER PARTS -->
+        <div class="card flex-col flex-none rounded-2xl bg-white lg:w-1/4 mt-10 mx-6 lg:mt-0 lg:ml-4 lg:mx-0">
+          <div class="card-head-text text-2xl text-black font-bold pl-4 h-10">Computer Parts</div>
+          <div class="card-items w-full h-[calc(100%-60px)] flex-col">
+            <div class="row-1 w-full h-1/2 flex space-x-10 px-4">
+              <a class="item-1 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
+                <div class="item-img p-4">
+                  <img src="./img/computer-parts/cpu-icon.png" alt="" class="w-auto h-auto object-contain">
+                </div>
+                <div class="item-text 2xl:text-3xl text-center">From ₹ 12,999</div>
+              </a>
+              <a class="item-2 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
+                <div class="item-img p-4">
+                  <img src="./img/computer-parts/gpu-icon.png" alt="" class="w-auto h-auto object-contain">
+                </div>
+                <div class="item-text 2xl:text-3xl text-center">From ₹ 18,999</div>
+              </a>
+            </div>
+            <div class="row-2 w-full h-1/2 flex mt-2.5 space-x-10 px-4">
+              <a class="item-1 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
+                <div class="item-img p-4">
+                  <img src="./img/computer-parts/ssd-icon.png" alt="" class="w-auto h-auto object-contain">
+                </div>
+                <div class="item-text 2xl:text-3xl text-center">From ₹ 2,499</div>
+              </a>
+              <a class="item-2 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
+                <div class="item-img p-4">
+                  <img src="./img/computer-parts/ram-icon.png" alt="" class="w-auto h-auto object-contain">
+                </div>
+                <div class="item-text 2xl:text-3xl text-center">From ₹ 1,799</div>
+              </a>
+            </div>
+          </div>
+        </div>
         <!-- KITCHEN -->
-        <div class="card flex-col flex-none rounded-2xl my-8 bg-white lg:w-1/4">
+        <div class="card flex-col flex-none rounded-2xl bg-white lg:w-1/4 mt-10 mx-6 lg:mt-0 lg:ml-4 lg:mx-0">
           <div class="card-head-text text-2xl text-black font-bold pl-4 h-10">Kitchen</div>
           <div class="card-items w-full h-[calc(100%-60px)] flex-col">
             <div class="row-1 w-full h-1/2 flex space-x-10 px-4">
-              <div class="item-1 w-1/2 h-full flex-col hover:bg-gray-300">
-                <div class="item-img">
-                  <img src="./img/kitchen/stove.png" alt="" class="w-auto h-auto px-2 pt-4">
+              <a class="item-1 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
+                <div class="item-img p-4">
+                  <img src="./img/kitchen/stove.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl pl-2">Stoves</div>
-              </div>
-              <div class="item-2 w-1/2 h-full flex-col hover:bg-gray-300">
-                <div class="item-img">
-                  <img src="./img/kitchen/water-bottle.png" alt="" class="w-auto h-auto px-2 pt-4">
+                <div class="item-text 2xl:text-3xl text-center">Stoves</div>
+              </a>
+              <a class="item-2 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
+                <div class="item-img p-4">
+                  <img src="./img/kitchen/water-bottle.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl pl-2">Water bottles</div>
-              </div>
+                <div class="item-text 2xl:text-3xl text-center">Water bottles</div>
+              </a>
             </div>
             <div class="row-2 w-full h-1/2 flex mt-2.5 space-x-10 px-4">
-              <div class="item-1 w-1/2 h-full flex-col hover:bg-gray-300">
-                <div class="item-img">
-                  <img src="./img/kitchen/cooking.png" alt="" class="w-auto h-auto px-2 pt-4">
+              <a class="item-1 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
+                <div class="item-img p-4">
+                  <img src="./img/kitchen/cooking.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl px-2">Utensils</div>
-              </div>
-              <div class="item-2 w-1/2 h-full flex-col hover:bg-gray-300">
-                <div class="item-img">
-                  <img src="./img/kitchen/water-glass.png" alt="" class="w-auto h-auto px-2 pt-4">
+                <div class="item-text 2xl:text-3xl text-center">Utensils</div>
+              </a>
+              <a class="item-2 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
+                <div class="item-img p-4">
+                  <img src="./img/kitchen/water-glass.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl pl-2">Glasses</div>
-              </div>
+                <div class="item-text 2xl:text-3xl text-center">Glasses</div>
+              </a>
             </div>
           </div>
         </div>     
-     </div>
-     <!-- SECOND ROW SHOP ENDS -->
+      </div>
+      <!-- SECOND ROW SHOP ENDS -->
 
-     <!-- THIRD ROW SHOP -->
-    <div class="flex-col bg-white mx-auto rounded-xl ">
+      <!-- THIRD ROW SHOP -->
+      <div class="flex-col bg-white rounded-xl mx-6 lg:-mr-12 lg:mx-0">
       <div class="text-3xl text-black font-bold pl-10 pb-4">Deals on smartphones</div>
-      <div class="third-row-shop flex flex-nowrap snap-x snap-mandatory overflow-x-auto">
-       <div class=" phone-card ml-10 w-2/3 h-auto flex-col snap-start bg-white flex-none rounded-2xl shadow-2xl hover:bg-gray-300 md:w-1/3 lg:w-1/5 xl:w-1/6">
+      <div class="third-row-shop flex flex-nowrap snap-x snap-mandatory overflow-x-auto scrollbar-thin scrollbar-thumb-gray-500">
+       <a class=" phone-card ml-10 w-2/3 h-auto flex-col snap-start bg-white flex-none rounded-2xl shadow-2xl hover:bg-gray-300 cursor-pointer md:w-1/3 lg:w-1/5 xl:w-1/6">
          <div class="phone-name text-center text-2xl font-semibold text-black">Phone 1</div>
          <div class="phone-img">
            <img src="./img/tech/phone.png" alt="" class="w-full h-full my-4">
          </div>
          <div class="phone-price pl-4 mb-4"> <span class="original-price text-red-600 line-through text-xl">₹ 49,999</span> 
           <br> <span class="sale-price text-green-600 text-3xl">₹ 43,999</span></div>
-       </div>
-       <div class=" phone-card ml-10 w-2/3 h-auto flex-col snap-start bg-white flex-none rounded-2xl shadow-2xl hover:bg-gray-300 md:w-1/3 lg:w-1/5 xl:w-1/6">
+         </a>
+       <a class=" phone-card ml-10 w-2/3 h-auto flex-col snap-start bg-white flex-none rounded-2xl shadow-2xl hover:bg-gray-300 cursor-pointer md:w-1/3 lg:w-1/5 xl:w-1/6">
          <div class="phone-name text-center text-2xl font-semibold text-black">Phone 2</div>
          <div class="phone-img">
            <img src="./img/tech/phone.png" alt="" class="w-full h-full my-4">
          </div>
          <div class="phone-price pl-4 mb-4"> <span class="original-price text-red-600 line-through text-xl">₹ 21,999</span>
           <br> <span class="sale-price text-green-600 text-3xl">₹ 18,999</span></div>
-       </div>
-       <div class=" phone-card ml-10 w-2/3 h-auto flex-col snap-start bg-white flex-none rounded-2xl shadow-2xl hover:bg-gray-300 md:w-1/3 lg:w-1/5 xl:w-1/6">
+         </a>
+       <a class=" phone-card ml-10 w-2/3 h-auto flex-col snap-start bg-white flex-none rounded-2xl shadow-2xl hover:bg-gray-300 cursor-pointer md:w-1/3 lg:w-1/5 xl:w-1/6">
          <div class="phone-name text-center text-2xl font-semibold text-black">Phone 3</div>
          <div class="phone-img">
            <img src="./img/tech/phone.png" alt="" class="w-full h-full my-4">
          </div>
          <div class="phone-price pl-4 mb-4"> <span class="original-price text-red-600 line-through text-xl">₹ 15,999</span>
           <br> <span class="sale-price text-green-600 text-3xl">₹ 13,999</span></div>
-       </div>
-       <div class=" phone-card ml-10 w-2/3 h-auto flex-col snap-start bg-white flex-none rounded-2xl shadow-2xl hover:bg-gray-300 md:w-1/3 lg:w-1/5 xl:w-1/6">
+         </a>
+       <a class=" phone-card ml-10 w-2/3 h-auto flex-col snap-start bg-white flex-none rounded-2xl shadow-2xl hover:bg-gray-300 cursor-pointer md:w-1/3 lg:w-1/5 xl:w-1/6">
          <div class="phone-name text-center text-2xl font-semibold text-black">Phone 4</div>
          <div class="phone-img">
            <img src="./img/tech/phone.png" alt="" class="w-full h-full my-4">
          </div>
          <div class="phone-price pl-4 mb-4"> <span class="original-price text-red-600 line-through text-xl">₹ 15,999</span>
           <br> <span class="sale-price text-green-600 text-3xl">₹ 12,999</span></div>
-       </div>
-       <div class=" phone-card ml-10 w-2/3 h-auto flex-col snap-start bg-white flex-none rounded-2xl shadow-2xl hover:bg-gray-300 md:w-1/3 lg:w-1/5 xl:w-1/6">
+         </a>
+       <a class=" phone-card ml-10 w-2/3 h-auto flex-col snap-start bg-white flex-none rounded-2xl shadow-2xl hover:bg-gray-300 cursor-pointer md:w-1/3 lg:w-1/5 xl:w-1/6">
          <div class="phone-name text-center text-2xl font-semibold text-black">Phone 5</div>
          <div class="phone-img">
            <img src="./img/tech/phone.png" alt="" class="w-full h-full my-4">
          </div>
          <div class="phone-price pl-4 mb-4"> <span class="original-price text-red-600 line-through text-xl">₹ 18,999</span>
           <br> <span class="sale-price text-green-600 text-3xl">₹ 16,999</span></div>
-       </div>
-       <div class=" phone-card ml-10 w-2/3 h-auto flex-col snap-start bg-white flex-none rounded-2xl shadow-2xl hover:bg-gray-300 md:w-1/3 lg:w-1/5 xl:w-1/6">
+         </a>
+       <a class=" phone-card ml-10 w-2/3 h-auto flex-col snap-start bg-white flex-none rounded-2xl shadow-2xl hover:bg-gray-300 cursor-pointer md:w-1/3 lg:w-1/5 xl:w-1/6">
          <div class="phone-name text-center text-2xl font-semibold text-black">Phone 6</div>
          <div class="phone-img">
            <img src="./img/tech/phone.png" alt="" class="w-full h-full my-4">
          </div>
          <div class="phone-price pl-4 mb-4"> <span class="original-price text-red-600 line-through text-xl">₹ 8,999</span>
           <br> <span class="sale-price text-green-600 text-3xl">₹ 6,499</span></div>
-       </div>
-       <div class=" phone-card ml-10 w-2/3 h-auto flex-col snap-start bg-white flex-none rounded-2xl shadow-2xl hover:bg-gray-300 md:w-1/3 lg:w-1/5 xl:w-1/6">
+         </a>
+       <a class=" phone-card ml-10 w-2/3 h-auto flex-col snap-start bg-white flex-none rounded-2xl shadow-2xl hover:bg-gray-300 cursor-pointer md:w-1/3 lg:w-1/5 xl:w-1/6">
          <div class="phone-name text-center text-2xl font-semibold text-black">Phone 7</div>
          <div class="phone-img">
            <img src="./img/tech/phone.png" alt="" class="w-full h-full my-4">
          </div>
          <div class="phone-price pl-4 mb-4"> <span class="original-price text-red-600 line-through text-xl">₹ 18,499</span>
           <br> <span class="sale-price text-green-600 text-3xl">₹ 16,499</span></div>
-       </div>
-       <div class=" phone-card ml-10 w-2/3 h-auto flex-col snap-start bg-white flex-none rounded-2xl shadow-2xl hover:bg-gray-300 md:w-1/3 lg:w-1/5 xl:w-1/6">
+         </a>
+       <a class=" phone-card ml-10 w-2/3 h-auto flex-col snap-start bg-white flex-none rounded-2xl shadow-2xl hover:bg-gray-300 cursor-pointer md:w-1/3 lg:w-1/5 xl:w-1/6">
          <div class="phone-name text-center text-2xl font-semibold text-black">Phone 8</div>
          <div class="phone-img">
            <img src="./img/tech/phone.png" alt="" class="w-full h-full my-4">
          </div>
          <div class="phone-price pl-4 mb-4"> <span class="original-price text-red-600 line-through text-xl">₹ 17,999</span>
           <br> <span class="sale-price text-green-600 text-3xl">₹ 16,999</span></div>
-       </div>
+         </a>
       </div>
-    </div>
-     <!-- THIRD ROW SHOP ENDS -->
+      </div>
+      <!-- THIRD ROW SHOP ENDS -->
 
-     <!-- FOURTH ROW SHOP -->
-      <div class="second-row-shops flex flex-col lg:flex-row px-8 lg:space-x-4 mx-auto mr-6">
-          <!-- TRAVEL SECTION -->
-          <div class="card flex-col flex-none rounded-2xl my-8 bg-white lg:w-1/4">
-            <div class="card-head-text text-2xl text-black font-bold pl-4 h-15">Travel | Book your tickets</div>
-            <div class="card-items w-full h-[calc(100%-80px)] flex-col">
-              <div class="row-1 w-full h-1/2 flex space-x-10 px-4">
-                <div class="item-1 w-1/2 h-full flex-col hover:bg-gray-300">
-                  <div class="item-img">
-                    <img src="./img/tickets/airplane-lticket-logo.png" alt="" class="w-auto h-auto px-2 pt-4">
-                  </div>
-                  <div class="item-text 2xl:text-3xl pl-2">Flight tickets</div>
+      <!-- FOURTH ROW SHOP -->
+      <div class="first-row-shops flex flex-col lg:flex-row">
+
+        <!-- FURNITURES -->
+        <div class="card flex-col flex-none rounded-2xl bg-white mx-6 lg:w-1/4 lg:mx-0">
+          <div class="card-head-text text-2xl text-black font-bold pl-4 h-10">Furnitures</div>
+          <div class="card-items w-full h-[calc(100%-60px)] flex-col">
+            <div class="row-1 w-full h-1/2 flex space-x-10 px-4">
+              <a class="item-1 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
+                <div class="item-img p-4">
+                  <img src="./img/furniture/bed.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-2 w-1/2 h-full flex-col hover:bg-gray-300">
-                  <div class="item-img">
-                    <img src="./img/tickets/train-ticket-logo.png" alt="" class="w-auto h-auto px-2 pt-4">
-                  </div>
-                  <div class="item-text 2xl:text-3xl pl-2">Trains tickets</div>
+                <div class="item-text 2xl:text-3xl text-center">Beds @ <br> ₹ 10,999</div>
+              </a>
+              <a class="item-2 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
+                <div class="item-img p-4">
+                  <img src="./img/furniture/lamp.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-              </div>
-              <div class="row-2 w-full h-1/2 flex mt-2.5 space-x-10 px-4">
-                <div class="item-1 w-1/2 h-full flex-col hover:bg-gray-300">
-                  <div class="item-img">
-                    <img src="./img/tickets/bus-ticket-logo.png" alt="" class="w-auto h-auto px-2 pt-4">
-                  </div>
-                  <div class="item-text 2xl:text-3xl px-2">Bus tickets</div>
+                <div class="item-text 2xl:text-3xl text-center">Lambs @ <br> ₹ 1,499</div>
+              </a>
+            </div>
+            <div class="row-2 w-full h-1/2 flex mt-2.5 space-x-10 px-4">
+              <a class="item-1 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
+                <div class="item-img p-4">
+                  <img src="./img/furniture/stool.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-2 w-1/2 h-full flex-col hover:bg-gray-300">
-                  <div class="item-img">
-                    <img src="./img/tickets/luggage-logo.png" alt="" class="w-auto h-auto px-2 pt-4">
-                  </div>
-                  <div class="item-text 2xl:text-3xl">Travel products</div>
+                <div class="item-text 2xl:text-3xl text-center">Stools @ <br> ₹ 1,399</div>
+              </a>
+              <a class="item-2 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
+                <div class="item-img p-4">
+                  <img src="./img/furniture/table.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-              </div>
+                <div class="item-text 2xl:text-3xl text-center">Tables @ <br> ₹ 1,799 </div>
+              </a>
             </div>
           </div>
-          <!-- 50% OFF -->
-          <div class="fifty-percent-off flex-col flex-none rounded-2xl my-8 bg-white hover:bg-gray-300 lg:w-1/4">
-            <div class="fifty-percent-off-text text-black text-4xl font-bold text-center">
-              Upto 50% Off <br> <span class="font-medium text-xl text-gray-500">on laptops & phones</span>
+        </div>          
+        
+        <!-- MIXERS & GRINDERS -->
+        <a class="1-item-card flex-col flex-none rounded-2xl bg-white hover:bg-gray-300 cursor-pointer mx-6 lg:w-1/4 mt-10 lg:mt-0 lg:ml-4 lg:mx-0">
+          <div class="1-item-card-text text-black text-4xl font-bold text-center">
+            Upto 70% Off <br> <span class="font-medium text-xl text-gray-500">on mixers & grinders</span>
+          </div>
+          <div class="1-item-card-product-img">
+            <img src="./img/kitchen/blender.png" alt="" class="w-full h-full p-10">
+          </div>
+        </a>
+
+        <!-- CONTROL WITH WIFI -->
+        <div class="card flex-col flex-none rounded-2xl bg-white mx-6 lg:w-1/4 mt-10 lg:mt-0 lg:ml-4 lg:mx-0">
+          <div class="card-head-text text-2xl text-black font-bold pl-4 h-10">IoT | Smart Devices</div>
+          <div class="card-items w-full h-[calc(100%-60px)] flex-col">
+            <div class="row-1 w-full h-1/2 flex space-x-10 px-4">
+              <a class="item-1 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
+                <div class="item-img p-4">
+                  <img src="./img/tech/smart-tv.png" alt="" class="w-auto h-auto object-contain">
+                </div>
+                <div class="item-text 2xl:text-3xl text-center">TVs</div>
+              </a>
+              <a class="item-2 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
+                <div class="item-img p-4">
+                  <img src="./img/tech/light-bulb.png" alt="" class="w-auto h-auto object-contain">
+                </div>
+                <div class="item-text 2xl:text-3xl text-center">Bulbs</div>
+              </a>
             </div>
-            <div class="fifty-percent-off-product-img">
-              <img src="./img/tech/devices.png" alt="" class="w-full h-full p-10">
+            <div class="row-2 w-full h-1/2 flex mt-2.5 space-x-10 px-4">
+              <a class="item-1 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
+                <div class="item-img p-4">
+                  <img src="./img/tech/ceiling-fan.png" alt="" class="w-auto h-auto object-contain">
+                </div>
+                <div class="item-text 2xl:text-3xl text-center">Fans</div>
+              </a>
+              <a class="item-2 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
+                <div class="item-img p-4">
+                  <img src="./img/tech/voice-assistant.png" alt="" class="w-auto h-auto object-contain">
+                </div>
+                <div class="item-text 2xl:text-3xl text-center">Voice assistants</div>
+              </a>
             </div>
           </div>
-          <!-- TOOLS -->
-          <div class="tools flex-col flex-none rounded-2xl my-8 bg-white hover:bg-gray-300 lg:w-1/4">
-            <div class="tools-text text-black text-4xl font-bold text-center">
-              Upto 70% Off <br> <span class="font-medium text-xl text-gray-500">on professional tools</span>
+        </div>
+        
+        <!-- UPCOMING SALES -->
+        <div class="card flex-col flex-none rounded-2xl bg-white mx-6 lg:w-1/4 mt-10 lg:mt-0 lg:ml-4 lg:mx-0">
+          <div class="card-head-text text-2xl text-black font-bold pl-4 h-auto">Upcoming sale on Phones</div>
+          <div class="card-items w-full h-[calc(100%-100px)] flex-col">
+            <div class="row-1 w-full h-1/2 flex space-x-10 px-4">
+              <a class="item-1 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
+                <div class="item-img p-4">
+                  <img src="./img/tech/phone.png" alt="" class="w-auto h-auto object-contain">
+                </div>
+                <div class="item-text 2xl:text-3xl text-center">₹ _,_99</div>
+              </a>
+              <a class="item-2 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
+                <div class="item-img p-4">
+                  <img src="./img/tech/phone.png" alt="" class="w-auto h-auto object-contain">
+                </div>
+                <div class="item-text 2xl:text-3xl text-center">₹ _ _,499</div>
+              </a>
             </div>
-            <div class="fifty-percent-off-product-img">
-              <img src="./img/extra/tool-box.png" alt="" class="w-full h-full p-10">
+            <div class="row-2 w-full h-1/2 flex mt-2.5 space-x-10 px-4">
+              <a class="item-1 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
+                <div class="item-img p-4">
+                  <img src="./img/tech/phone.png" alt="" class="w-auto h-auto object-contain">
+                </div>
+                <div class="item-text 2xl:text-3xl text-center">₹ 1_,999</div>
+              </a>
+              <a class="item-2 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
+                <div class="item-img p-4">
+                  <img src="./img/tech/phone.png" alt="" class="w-auto h-auto object-contain">
+                </div>
+                <div class="item-text 2xl:text-3xl text-center">₹ 2_,999</div>
+              </a>
             </div>
           </div>
-          <!-- KITCHEN -->
-          <div class="card flex-col flex-none rounded-2xl my-8 bg-white lg:w-1/4">
-            <div class="card-head-text text-2xl text-black font-bold pl-4 h-10">Kitchen</div>
-            <div class="card-items w-full h-[calc(100%-60px)] flex-col">
-              <div class="row-1 w-full h-1/2 flex space-x-10 px-4">
-                <div class="item-1 w-1/2 h-full flex-col hover:bg-gray-300">
-                  <div class="item-img">
-                    <img src="./img/kitchen/stove.png" alt="" class="w-auto h-auto px-2 pt-4">
-                  </div>
-                  <div class="item-text 2xl:text-3xl pl-2">Stoves</div>
-                </div>
-                <div class="item-2 w-1/2 h-full flex-col hover:bg-gray-300">
-                  <div class="item-img">
-                    <img src="./img/kitchen/water-bottle.png" alt="" class="w-auto h-auto px-2 pt-4">
-                  </div>
-                  <div class="item-text 2xl:text-3xl pl-2">Water bottles</div>
-                </div>
-              </div>
-              <div class="row-2 w-full h-1/2 flex mt-2.5 space-x-10 px-4">
-                <div class="item-1 w-1/2 h-full flex-col hover:bg-gray-300">
-                  <div class="item-img">
-                    <img src="./img/kitchen/cooking.png" alt="" class="w-auto h-auto px-2 pt-4">
-                  </div>
-                  <div class="item-text 2xl:text-3xl px-2">Utensils</div>
-                </div>
-                <div class="item-2 w-1/2 h-full flex-col hover:bg-gray-300">
-                  <div class="item-img">
-                    <img src="./img/kitchen/water-glass.png" alt="" class="w-auto h-auto px-2 pt-4">
-                  </div>
-                  <div class="item-text 2xl:text-3xl pl-2">Glasses</div>
-                </div>
-              </div>
-            </div>
-          </div>     
+        </div>
       </div>
-     <!-- FOURTH ROW SHOPS ENDS -->
+      <!-- FOURTH ROW SHOPS ENDS -->
     </main>
   </div>
 </body>
