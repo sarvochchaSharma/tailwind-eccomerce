@@ -9,17 +9,153 @@
   <title>Nile</title>
 </head>
 
-<body>
+<body id="body">
 
   <div class="unsupported-error start-supporting:hidden text-4xl text-center bg-red-500 w-screen h-screen font-mono font-bold">
     DEVICE NOT SUPPORTED!!
   </div>
 
-  <div class="whole-content hidden start-supporting:block bg-gradient-to-b from-sky-700 to-sky-200 flex-col">
+  <div class="whole-content hidden start-supporting:block bg-gradient-to-b from-sky-700 to-sky-200 flex-col static" id="whole-content">
     <!-- HEADER -->
     <header class="flex flex-col w-full text-white">
+      <!-- SIDE NAVIGATION -->
+      <div class="sidenav w-screen h-full hidden sm:w-[400px] absolute z-50" id="sidenav">
+        <div class="sidenav-signin flex bg-slate-500 h-10 w-full items-center">
+          <div class="user-img h-6 w-6 ml-6">
+            <img src="./img/ui/user.png" alt="" class="w-full h-full object-contain cursor-pointer">
+          </div>
+          <div class="signin-text text-xl font-extrabold pl-2 text-white cursor-pointer">Hello, Sign in</div>
+          <div class="close-menu-button ml-auto mr-4 h-6 w-6">
+            <a href="#" onclick="closeSideNav()"><img src="./img/extra/close.png"></a>
+          </div>
+        </div>
+        <div class="sidenav-container overflow-y-auto flex-col text-black bg-white pl-4 w-full h-screen space-y-4">
+          <div class="side-nav-section">
+            <div class="side-nav-heading text-xl font-bold pl-2">What's New</div>
+            <div class="side-nav-options flex-col space-y-4 font-medium">
+              <div class="sidebar-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">Best Sellers</div>
+              <div class="sidebar-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">Movies</div>
+              <div class="sidebar-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Games</div>
+            </div>
+          </div>
+          <hr>
+          <div class="side-nav-section flex-col">
+            <div class="side-nav-heading text-xl font-bold pl-2">Mobiles, Tablets & Accessories</div>
+            <div class="side-nav-options flex-col space-y-4 font-medium">
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">All Mobile Phones</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Cases and Covers</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Screen Protectors</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Power Banks</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Refurbished</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Tablets</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Earphones</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Charging Cables & Adapters</div>
+            </div>
+          </div>
+          <hr>
+          <div class="side-nav-section flex-col">
+            <div class="side-nav-heading text-xl font-bold pl-2">Laptops & Computers</div>
+            <div class="side-nav-options flex-col space-y-4 font-medium">
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">All Computer & Accessories</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Laptops</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Storage Devices</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Monitors</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Computer Parts</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Games</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Softwares</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Cables</div>
+            </div>
+          </div>
+          <hr>
+          <div class="side-nav-section flex-col">
+            <div class="side-nav-heading text-xl font-bold pl-2">Electrical Appliances</div>
+            <div class="side-nav-options flex-col space-y-4 font-medium">
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">TVs</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Refrigerators</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Washing Machines</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">ACs</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Coolers</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Microwaves</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Kitchen</div>
+            </div>
+          </div>
+          <hr>
+          <div class="side-nav-section flex-col">
+            <div class="side-nav-heading text-xl font-bold pl-2">Fashion</div>
+            <div class="side-nav-options flex-col space-y-4 font-medium">
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">Boys</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Girls</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Male</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Female</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Kids</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Shop by brands</div>
+            </div>
+          </div>
+          <hr>
+          <div class="side-nav-section flex-col">
+            <div class="side-nav-heading text-xl font-bold pl-2">Books</div>
+            <div class="side-nav-options flex-col space-y-4 font-medium">
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">Drama</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Action</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Adventure</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Novels</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Fiction</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Sci-Fi</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Programming</div>
+            </div>
+          </div>
+          <hr>
+          <div class="side-nav-section flex-col">
+            <div class="side-nav-heading text-xl font-bold pl-2">Pay Bills & Bookings</div>
+            <div class="side-nav-options flex-col space-y-4 font-medium">
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">Credit Card</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Electricity</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">LPG</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Loan Payment</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Movie Tickets</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Theme Parks</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Restaurants</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Concerts</div>
+            </div>
+          </div>
+          <hr>
+          <div class="side-nav-section flex-col pb-40">
+            <div class="side-nav-heading text-xl font-bold pl-2">Help & Account</div>
+            <div class="side-nav-options flex-col space-y-4 font-medium">
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">Contact Support</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Return</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Your Account</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 ">Sign in</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        function openSideNav()
+        {
+          document.getElementById('sidenav').style.display = 'inline-block';
+          document.getElementById('top-nav').style.display = 'none';
+          document.getElementById('categories-nav').style.display = 'none';
+          document.getElementById('main').style.display = 'none';
+          document.getElementById('canvas').style.display = 'block';
+          document.getElementById('body').style.overflowY = 'hidden';
+        }
+
+        function closeSideNav()
+        {
+          document.getElementById('sidenav').style.display = 'none';
+          document.getElementById('top-nav').style.display = 'inline-flex';
+          document.getElementById('categories-nav').style.display = 'inline-flex';
+          document.getElementById('main').style.display = 'inline-flex';
+          document.getElementById('canvas').style.display = 'none';
+          document.getElementById('body').style.overflowY = 'visible';
+          
+        }
+      </script>
+      <!-- SIDE NAVIGATION ENDS -->
+
       <!-- TOP NAVIGATION BAR -->
-      <nav class="top-nav h-16 bg-slate-500 flex items-center justify-between">
+      <nav class="top-nav h-16 bg-slate-500 flex items-center justify-between" id="top-nav">
         <!-- LOGO -->
           <div class="logo flex-none">
             <a href="index.html"><img src="./img/ui/nile-logo.png" alt="" class="w-24 h-10 cursor-pointer"></a>
@@ -55,11 +191,11 @@
         <!-- ACCOUNT -->
         <div class="account mx-auto flex-none">
           <div class="account-options flex flex-row space-x-4 items-center ">
-            <div class="login hidden lg:inline-block rounded-md bg-orange-600 p-2 cursor-pointer">
-              <a href="./signin.html">Signin</a>
+            <div class="signin hidden lg:inline-block rounded-md bg-orange-600 hover:bg-orange-700 p-2 cursor-pointer">
+              <a href="./pages/navigation/signin.html">Signin</a>
             </div>
-            <div class="signup hidden lg:inline-block rounded-md bg-orange-400 p-2 cursor-pointer">
-              <a href="./signup.html">Signup</a>
+            <div class="signup hidden lg:inline-block rounded-md bg-orange-400 hover:bg-orange-500 p-2 cursor-pointer">
+              <a href="./pages/navigation/signup.html">Signup</a>
             </div>
             <div class="user-picture-large-screen flex-none">
               <a href=""><img src="./img/ui/user.png" alt="" class="w-8 h-8 hidden lg:inline-block cursor-pointer"></a>
@@ -70,8 +206,8 @@
           </div>
         </div>
         <!-- CART -->
-        <a href="./cart.html">
-          <div class="cart flex flex-row hidden lg:inline-flex space-x-2 rounded-md bg-orange-400 p-1 cursor-pointer">
+        <a href="./pages/navigation/cart.html">
+          <div class="cart flex flex-row hidden lg:inline-flex space-x-2 rounded-md bg-orange-400 hover:bg-orange-500 p-1 cursor-pointer">
             <div class="cart-logo">
               <img src="./img/ui/shopping-cart.png" alt="" class="w-8 h-8">
             </div>
@@ -87,34 +223,34 @@
           </div>
         </a>
       </nav>
-      <!-- TOP NAVIGATION BAR ENDS HERE -->
+      <!-- TOP NAVIGATION BAR ENDS -->
 
       <!-- CATEGORIES NAVIGATION BAR -->
-      <nav class="categories-nav bg-slate-400 h-12 flex items-center justify-between">
-        <button class="flex space-x-2 ml-6 cursor-pointer">
-          <a class="all-btn-img">
-            <img src="./img/ui/menu.png" alt="" class="h-6 w-6">
-          </a>
-          <a class="all-btn-text font-bold">
-            All
-          </a>
-        </button>
-        <div class="flex-none cursor-pointer"><a href="./best-sellers.html"> Best Sellers </a></div>
-        <div class="flex-none cursor-pointer"><a href="./mobiles.html"> Mobiles </a></div>
-        <div class="flex-none hidden md:inline-block cursor-pointer"><a href="./laptops.html"> Laptops </a></div>
-        <div class="flex-none hidden md:inline-block cursor-pointer"><a href="./books.html"> Books </a></div>
-        <div class="flex-none hidden md:inline-block cursor-pointer"><a href="./customer-service.html"> Customer Service </a></div>
-        <div class="hidden md:inline-block flex-none cursor-pointer"><a href="./electronics.html"> Electronics </a></div>
-        <div class="hidden md:inline-block flex-none cursor-pointer"><a href="./home-and-kitchen.html"> Home & Kitchen</a></div>
-        <div class="hidden lg:inline-block flex-none cursor-pointer"><a href="./computers.html"> Computers </a></div>
-        <div class="hidden lg:inline-block flex-none cursor-pointer"><a href="./fashion.html"> Fashion </a></div>
-        <div class="hidden lg:inline-block flex-none cursor-pointer"><a href="./toys.html"> Toys </a></div>
-        <div class="hidden lg:inline-block flex-none cursor-pointer mr-8"><a href="./sell.html"> Sell </a></div>
+      <nav class="categories-nav bg-slate-400 h-12 flex items-center justify-between" id="categories-nav">
+        <div href="#  " onclick="openSideNav()" class="hover:bg-slate-500 ml-4">
+          <button class="flex space-x-2 p-2 cursor-pointer">
+            <div class="all-btn-img">
+              <img src="./img/ui/menu.png" alt="" class="h-6 w-6">
+            </div>
+              <div class="all-btn-txt">All</div>
+          </button>
+        </div>
+        <div class="flex-none cursor-pointer hover:bg-slate-500 p-2"><a href="./pages/navigation/best-sellers.html"> Best Sellers </a></div>
+        <div class="flex-none cursor-pointer"><a href="./pages/navigation/mobiles.html"> Mobiles </a></div>
+        <div class="flex-none hidden md:inline-block cursor-pointer hover:bg-slate-500 p-2"><a href="./pages/navigation/laptops.html"> Laptops </a></div>
+        <div class="flex-none hidden md:inline-block cursor-pointer hover:bg-slate-500 p-2"><a href="./pages/navigation/books.html"> Books </a></div>
+        <div class="flex-none hidden md:inline-block cursor-pointer hover:bg-slate-500 p-2"><a href="./pages/navigation/customer-service.html"> Customer Service </a></div>
+        <div class="hidden md:inline-block flex-none cursor-pointer hover:bg-slate-500 p-2"><a href="./pages/navigation/electronics.html"> Electronics </a></div>
+        <div class="hidden md:inline-block flex-none cursor-pointer hover:bg-slate-500 p-2"><a href="./pages/navigation/home-and-kitchen.html"> Home & Kitchen</a></div>
+        <div class="hidden lg:inline-block flex-none cursor-pointer hover:bg-slate-500 p-2"><a href="./pages/navigation/computers.html"> Computers </a></div>
+        <div class="hidden lg:inline-block flex-none cursor-pointer hover:bg-slate-500 p-2"><a href="./pages/navigation/fashion.html"> Fashion </a></div>
+        <div class="hidden lg:inline-block flex-none cursor-pointer hover:bg-slate-500 p-2"><a href="./pages/navigation/toys.html"> Toys </a></div>
+        <div class="hidden lg:inline-block flex-none cursor-pointer hover:bg-slate-500 p-2 mr-8"><a href="./pages/navigation/sell.html"> Sell </a></div>
       </nav>
-      <!-- CATEGORIES NAVIGATION BAR ENDS HERE-->
+      <!-- CATEGORIES NAVIGATION BAR ENDS-->     
     </header>
 
-    <main class=" flex-col mx-auto lg:ml-12 lg:mr-24 py-10 space-y-10">
+    <main class="main flex-col mx-auto lg:ml-12 lg:mr-24 py-10 space-y-10" id="main">
 
       <!-- FIRST ROW SHOPS -->
       <div class="first-row-shops flex flex-col lg:flex-row">
@@ -124,7 +260,7 @@
           <div class="card-head-text text-2xl text-black font-bold pl-4 h-10">Upgrade your phone</div>
           <div class="card-items w-full h-[calc(100%-60px)] flex-col">
             <div class="row-1 w-full h-1/2 flex space-x-10 px-4">
-              <a class="item-1 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer" href="./pages/apple-phones.html">
+              <a class="item-1 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer" href="./pages/shops/apple.html">
                 <div class="item-img p-4">
                   <img src="./img/tech/apple-logo.png" alt="" class="w-auto h-auto object-contain">
                 </div>
@@ -515,6 +651,10 @@
       </div>
       <!-- FOURTH ROW SHOPS ENDS -->
     </main>
+
+    <div id="canvas" class="canvas hidden h-screen w-screen bg-slate-800 static opacity-50">
+      
+    </div>
   </div>
 </body>
 </html>
