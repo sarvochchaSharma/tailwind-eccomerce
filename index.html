@@ -134,20 +134,12 @@
         function openSideNav()
         {
           document.getElementById('sidenav').style.display = 'inline-block';
-          document.getElementById('top-nav').style.display = 'none';
-          document.getElementById('categories-nav').style.display = 'none';
-          document.getElementById('main').style.display = 'none';
-          document.getElementById('canvas').style.display = 'block';
           document.getElementById('body').style.overflowY = 'hidden';
         }
 
         function closeSideNav()
         {
           document.getElementById('sidenav').style.display = 'none';
-          document.getElementById('top-nav').style.display = 'inline-flex';
-          document.getElementById('categories-nav').style.display = 'inline-flex';
-          document.getElementById('main').style.display = 'inline-flex';
-          document.getElementById('canvas').style.display = 'none';
           document.getElementById('body').style.overflowY = 'visible';
           
         }
@@ -651,8 +643,6 @@
       </div>
       <!-- FOURTH ROW SHOPS ENDS -->
     </main>
-
-    <div id="canvas" class="canvas hidden h-screen w-screen bg-slate-800 static opacity-50">
       
     </div>
   </div>
