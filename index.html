@@ -24,7 +24,7 @@
           <div class="user-img h-6 w-6 ml-6">
             <img src="./img/ui/user.png" alt="" class="w-full h-full object-contain cursor-pointer">
           </div>
-          <div class="signin-text text-xl font-extrabold pl-2 text-white cursor-pointer">Hello, Sign in</div>
+          <div class="signin-text text-xl font-extrabold pl-2 text-white cursor-pointer"><a href="./pages/navigation/signin.html">Hello, Sign in</a></div>
           <div class="close-menu-button ml-auto mr-4 h-6 w-6">
             <a href="#" onclick="closeSideNav()"><img src="./img/extra/close.png"></a>
           </div>
@@ -164,116 +164,40 @@
           document.getElementById('body').style.overflowY = 'visible';
           
         }
-        
       </script>
-      <!-- SIDE NAVIGATION ENDS -->
-      
+      <!-- SIDE NAVIGATION ENDS -->     
 
       <!-- RIGHT SIDE MENU -->
-      <div class="right-side-menu w-screen h-full hidden sm:hidden z-40 absolute" id="right-menu">
-        <div class="right-side-menu-search flex bg-slate-500 h-10 w-full items-center">
-          
-          <div class="close-menu-button ml-auto mr-4 h-6 w-6">
-            <a href="#" onclick="closeRightMenu()"><img src="./img/extra/close.png"></a>
+      <div class="right-side-menu border-2 border-black w-screen sm:w-[400px] right-0 h-full hidden sm:hidden z-40 absolute" id="right-menu">
+        <div class="right-side-menu-top flex bg-slate-500 h-16 w-full items-center">
+          <div class="close-menu-button ml-6 h-6 w-6">
+            <a href="#" onclick="closeRightMenu()"><img src="./img/ui/close.png" class=" "></a>
+          </div>
+          <div class="search flex w-full md:hidden mr-4">
+            <div class="search-input ml-8 w-auto flex-grow ">
+              <input type="search" name="" id="" placeholder=" Search..." class="w-full h-12 rounded-md pl-2 focus:ring focus:ring-orange-400 focus:outline-none text-black text-xl font-mono justify-center ml-auto">
+            </div>
+            <div class="search-icon w-12 h-12 p-2 bg-orange-500">
+              <img src="./img/ui/search.png" alt="" class="object-contain " >
+            </div>
           </div>
         </div>
-        <div class="sidenav-container overflow-y-auto flex-col text-black bg-white pl-4 w-full h-screen space-y-4">
-          <div class="side-nav-section">
-            <div class="side-nav-heading text-xl font-bold pl-2">What's New</div>
-            <div class="side-nav-options flex-col space-y-4 font-medium">
-              <div class="sidebar-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">Best Sellers</div>
-              <div class="sidebar-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">Movies</div>
-              <div class="sidebar-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Games</div>
-            </div>
+        <div class="right-menu-container overflow-y-auto flex-col text-black bg-white pl-4 w-full h-screen space-y-4">
+          <div class="right-menu-signin flex-col">
+            <div class="signin-btn bg-orange-600 mt-4 mx-auto w-40 text-center rounded-md cursor-pointer hover:bg-orange-700 p-2 text-xl"><a href="./pages/navigation/signin.html">Sign in</a></div>
+          </div>
+          <div class="right-menu-signup text-center">
+            <span>New customer?</span> <span class="cursor-pointer text-blue-400"><a href="./pages/navigation/signup.html">Sign up</a></span>
           </div>
           <hr>
           <div class="side-nav-section flex-col">
-            <div class="side-nav-heading text-xl font-bold pl-2">Mobiles, Tablets & Accessories</div>
+            <div class="side-nav-heading text-xl font-bold pl-2">Your Account</div>
             <div class="side-nav-options flex-col space-y-4 font-medium">
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">All Mobile Phones</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Cases and Covers</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Screen Protectors</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Power Banks</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Refurbished</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Tablets</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Earphones</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Charging Cables & Adapters</div>
-            </div>
-          </div>
-          <hr>
-          <div class="side-nav-section flex-col">
-            <div class="side-nav-heading text-xl font-bold pl-2">Laptops & Computers</div>
-            <div class="side-nav-options flex-col space-y-4 font-medium">
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">All Computer & Accessories</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Laptops</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Storage Devices</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Monitors</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Computer Parts</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Games</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Softwares</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Cables</div>
-            </div>
-          </div>
-          <hr>
-          <div class="side-nav-section flex-col">
-            <div class="side-nav-heading text-xl font-bold pl-2">Electrical Appliances</div>
-            <div class="side-nav-options flex-col space-y-4 font-medium">
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">TVs</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Refrigerators</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Washing Machines</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">ACs</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Coolers</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Microwaves</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Kitchen</div>
-            </div>
-          </div>
-          <hr>
-          <div class="side-nav-section flex-col">
-            <div class="side-nav-heading text-xl font-bold pl-2">Fashion</div>
-            <div class="side-nav-options flex-col space-y-4 font-medium">
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">Boys</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Girls</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Male</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Female</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Kids</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Shop by brands</div>
-            </div>
-          </div>
-          <hr>
-          <div class="side-nav-section flex-col">
-            <div class="side-nav-heading text-xl font-bold pl-2">Books</div>
-            <div class="side-nav-options flex-col space-y-4 font-medium">
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">Drama</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Action</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Adventure</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Novels</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Fiction</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Sci-Fi</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Programming</div>
-            </div>
-          </div>
-          <hr>
-          <div class="side-nav-section flex-col">
-            <div class="side-nav-heading text-xl font-bold pl-2">Pay Bills & Bookings</div>
-            <div class="side-nav-options flex-col space-y-4 font-medium">
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">Credit Card</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Electricity</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">LPG</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Loan Payment</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Movie Tickets</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Theme Parks</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Restaurants</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Concerts</div>
-            </div>
-          </div>
-          <hr>
-          <div class="side-nav-section flex-col pb-40">
-            <div class="side-nav-heading text-xl font-bold pl-2">Help & Account</div>
-            <div class="side-nav-options flex-col space-y-4 font-medium">
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">Contact Support</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Return</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Your Account</div>
-              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 ">Sign in</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">Your Orders</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Your Wishlist</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Your Cart</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Your Memberships & Subscriptions</div>
+              <div class="sidenav-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Your Seller Account</div>
             </div>
           </div>
         </div>
@@ -318,17 +242,14 @@
         <div class="account mx-auto flex-none">
           <div class="account-options flex flex-row space-x-4 items-center ">
             <div class="signin hidden lg:inline-block rounded-md bg-orange-600 hover:bg-orange-700 p-2 cursor-pointer">
-              <a href="./pages/navigation/signin.html">Signin</a>
+              <a href="./pages/navigation/signin.html">Sign in</a>
             </div>
             <div class="signup hidden lg:inline-block rounded-md bg-orange-400 hover:bg-orange-500 p-2 cursor-pointer">
-              <a href="./pages/navigation/signup.html">Signup</a>
+              <a href="./pages/navigation/signup.html">Sign up</a>
             </div>
             <div class="user-picture-large-screen flex-none">
-              <a href=""><img src="./img/ui/user.png" alt="" class="w-8 h-8 hidden lg:inline-block cursor-pointer"></a>
+              <a href="#" onclick="openRightMenu()"><img src="./img/ui/user.png" alt="" class="w-8 h-8 hidden lg:inline-block cursor-pointer"></a>
             </div>
-          </div>
-          <div class="user-picture-small-screen">
-            <a href=""><img src="./img/ui/user.png" alt="" class="w-8 h-8 hidden md:inline-block lg:hidden cursor-pointer"></a>
           </div>
         </div>
         <!-- CART -->
@@ -386,31 +307,31 @@
           <div class="card-head-text text-2xl text-black font-bold pl-4 h-10">Upgrade your phone</div>
           <div class="card-items w-full h-[calc(100%-60px)] flex-col">
             <div class="row-1 w-full h-1/2 flex space-x-10 px-4">
-              <a class="item-1 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer" href="./pages/shops/apple.html">
+              <a class="item-1 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer" href="./pages/shops/apple-phone-shop.html">
                 <div class="item-img p-4">
                   <img src="./img/tech/apple-logo.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">From ₹49,999</div>
+                <div class="item-text  text-sm font-normal text-center">From ₹49,999</div>
               </a>
-              <a class="item-2 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer" href="./pages/samsung-phones.html">
+              <a class="item-2 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer" href="./pages/shops/samsung-phone-shop.html">
                 <div class="item-img p-4">
                   <img src="./img/tech/samsung-logo.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">From ₹19,999</div>
+                <div class="item-text text-sm font-normal text-center">From ₹19,999</div>
               </a>
             </div>
             <div class="row-2 w-full h-1/2 flex mt-2.5 space-x-10 px-4">
-              <a class="item-1 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer" href="./pages/samsung-phones.html">
+              <a class="item-1 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer" href="./pages/shops/google-phone-shop.html">
                 <div class="item-img p-4">
                   <img src="./img/tech/google-logo.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">From ₹26,999</div>
+                <div class="item-text text-sm font-normal text-center">From ₹26,999</div>
               </a>
-              <a class="item-2 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer" href="./pages/samsung-phones.html">
+              <a class="item-2 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer" href="./pages/shops/xiaomi-phone-shop.html">
                 <div class="item-img p-4">
                   <img src="./img/tech/xiaomi-logo.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">From ₹9,999</div>
+                <div class="item-text text-sm font-normal text-center">From ₹9,999</div>
               </a>
             </div>
           </div>
@@ -425,13 +346,13 @@
                 <div class="item-img p-4">
                   <img src="./img/clothing-icons/tshirt.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">From ₹499</div>
+                <div class="item-text text-sm font-normal text-center">From ₹499</div>
               </a>
               <a class="item-2 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
                 <div class="item-img p-4">
                   <img src="./img/clothing-icons/trousers.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">From ₹399</div>
+                <div class="item-text text-sm font-normal text-center">From ₹399</div>
               </a>
             </div>
             <div class="row-2 w-full h-1/2 flex mt-2.5 space-x-10 px-4">
@@ -439,13 +360,13 @@
                 <div class="item-img p-4">
                   <img src="./img/clothing-icons/shirt.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">From ₹699</div>
+                <div class="item-text text-sm font-normal text-center">From ₹699</div>
               </a>
               <a class="item-2 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
                 <div class="item-img p-4">
                   <img src="./img/clothing-icons/cap.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">From ₹199</div>
+                <div class="item-text text-sm font-normal text-center">From ₹199</div>
               </a>
             </div>
           </div>
@@ -464,7 +385,7 @@
         <!-- SIGNIN -->
         <div class="signin-card flex-none flex-col rounded-2xl bg-white mx-6 lg:w-1/4 h-40 mt-10 lg:mt-0 lg:ml-4 lg:mx-0">
           <div class="signin-text text-2xl text-black font-bold pl-4 pt- 10 h-10">Sign in for your best experience</div>
-          <div class="signin-btn bg-yellow-400 mt-10 mx-auto w-40 text-center rounded-md cursor-pointer hover:bg-yellow-600"><a href="">Sign in</a></div>
+          <div class="signin-btn bg-orange-600 mt-10 mx-auto w-40 text-center rounded-md cursor-pointer hover:bg-orange-700 p-2"><a href="./pages/navigation/signin.html">Sign in</a></div>
         </div>
       </div>
       <!-- FIRST ROW SHOP ENDS -->
@@ -489,13 +410,13 @@
                 <div class="item-img p-4">
                   <img src="./img/tickets/airplane-lticket-logo.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">Flight tickets</div>
+                <div class="item-text text-sm font-normal text-center">Flight tickets</div>
               </a>
               <a class="item-2 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
                 <div class="item-img p-4">
                   <img src="./img/tickets/train-ticket-logo.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">Trains tickets</div>
+                <div class="item-text text-sm font-normal text-center">Trains tickets</div>
               </a>
             </div>
             <div class="row-2 w-full h-1/2 flex mt-2.5 space-x-10 px-4">
@@ -503,13 +424,13 @@
                 <div class="item-img p-4">
                   <img src="./img/tickets/bus-ticket-logo.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">Bus tickets</div>
+                <div class="item-text text-sm font-normal text-center">Bus tickets</div>
               </a>
               <a class="item-2 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
                 <div class="item-img p-4">
                   <img src="./img/tickets/luggage-logo.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">Trolley Bags</div>
+                <div class="item-text text-sm font-normal text-center">Trolley Bags</div>
               </a>
             </div>
           </div>
@@ -523,13 +444,13 @@
                 <div class="item-img p-4">
                   <img src="./img/computer-parts/cpu-icon.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">From ₹ 12,999</div>
+                <div class="item-text text-sm font-normal text-center">From ₹ 12,999</div>
               </a>
               <a class="item-2 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
                 <div class="item-img p-4">
                   <img src="./img/computer-parts/gpu-icon.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">From ₹ 18,999</div>
+                <div class="item-text text-sm font-normal text-center">From ₹ 18,999</div>
               </a>
             </div>
             <div class="row-2 w-full h-1/2 flex mt-2.5 space-x-10 px-4">
@@ -537,13 +458,13 @@
                 <div class="item-img p-4">
                   <img src="./img/computer-parts/ssd-icon.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">From ₹ 2,499</div>
+                <div class="item-text text-sm font-normal text-center">From ₹ 2,499</div>
               </a>
               <a class="item-2 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
                 <div class="item-img p-4">
                   <img src="./img/computer-parts/ram-icon.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">From ₹ 1,799</div>
+                <div class="item-text text-sm font-normal text-center">From ₹ 1,799</div>
               </a>
             </div>
           </div>
@@ -557,13 +478,13 @@
                 <div class="item-img p-4">
                   <img src="./img/kitchen/stove.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">Stoves</div>
+                <div class="item-text text-sm font-normal text-center">Stoves</div>
               </a>
               <a class="item-2 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
                 <div class="item-img p-4">
                   <img src="./img/kitchen/water-bottle.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">Water bottles</div>
+                <div class="item-text text-sm font-normal text-center">Water bottles</div>
               </a>
             </div>
             <div class="row-2 w-full h-1/2 flex mt-2.5 space-x-10 px-4">
@@ -571,13 +492,13 @@
                 <div class="item-img p-4">
                   <img src="./img/kitchen/cooking.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">Utensils</div>
+                <div class="item-text text-sm font-normal text-center">Utensils</div>
               </a>
               <a class="item-2 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
                 <div class="item-img p-4">
                   <img src="./img/kitchen/water-glass.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">Glasses</div>
+                <div class="item-text text-sm font-normal text-center">Glasses</div>
               </a>
             </div>
           </div>
@@ -669,13 +590,13 @@
                 <div class="item-img p-4">
                   <img src="./img/furniture/bed.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">Beds @ <br> ₹ 10,999</div>
+                <div class="item-text text-sm font-normal text-center">Beds @ <br> ₹ 10,999</div>
               </a>
               <a class="item-2 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
                 <div class="item-img p-4">
                   <img src="./img/furniture/lamp.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">Lambs @ <br> ₹ 1,499</div>
+                <div class="item-text text-sm font-normal text-center">Lambs @ <br> ₹ 1,499</div>
               </a>
             </div>
             <div class="row-2 w-full h-1/2 flex mt-2.5 space-x-10 px-4">
@@ -683,13 +604,13 @@
                 <div class="item-img p-4">
                   <img src="./img/furniture/stool.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">Stools @ <br> ₹ 1,399</div>
+                <div class="item-text text-sm font-normal text-center">Stools @ <br> ₹ 1,399</div>
               </a>
               <a class="item-2 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
                 <div class="item-img p-4">
                   <img src="./img/furniture/table.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">Tables @ <br> ₹ 1,799 </div>
+                <div class="item-text text-sm font-normal text-center">Tables @ <br> ₹ 1,799 </div>
               </a>
             </div>
           </div>
@@ -714,13 +635,13 @@
                 <div class="item-img p-4">
                   <img src="./img/tech/smart-tv.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">TVs</div>
+                <div class="item-text text-sm font-normal text-center">TVs</div>
               </a>
               <a class="item-2 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
                 <div class="item-img p-4">
                   <img src="./img/tech/light-bulb.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">Bulbs</div>
+                <div class="item-text text-sm font-normal text-center">Bulbs</div>
               </a>
             </div>
             <div class="row-2 w-full h-1/2 flex mt-2.5 space-x-10 px-4">
@@ -728,13 +649,13 @@
                 <div class="item-img p-4">
                   <img src="./img/tech/ceiling-fan.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">Fans</div>
+                <div class="item-text text-sm font-normal text-center">Fans</div>
               </a>
               <a class="item-2 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
                 <div class="item-img p-4">
                   <img src="./img/tech/voice-assistant.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">Voice assistants</div>
+                <div class="item-text text-sm font-normal text-center">Voice assistants</div>
               </a>
             </div>
           </div>
@@ -749,13 +670,13 @@
                 <div class="item-img p-4">
                   <img src="./img/tech/phone.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">₹ _,_99</div>
+                <div class="item-text text-sm font-normal text-center">₹ _,_99</div>
               </a>
               <a class="item-2 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
                 <div class="item-img p-4">
                   <img src="./img/tech/phone.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">₹ _ _,499</div>
+                <div class="item-text text-sm font-normal text-center">₹ _ _,499</div>
               </a>
             </div>
             <div class="row-2 w-full h-1/2 flex mt-2.5 space-x-10 px-4">
@@ -763,13 +684,13 @@
                 <div class="item-img p-4">
                   <img src="./img/tech/phone.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">₹ 1_,999</div>
+                <div class="item-text text-sm font-normal text-center">₹ 1_,999</div>
               </a>
               <a class="item-2 w-1/2 h-full flex-col hover:bg-gray-300 cursor-pointer">
                 <div class="item-img p-4">
                   <img src="./img/tech/phone.png" alt="" class="w-auto h-auto object-contain">
                 </div>
-                <div class="item-text 2xl:text-3xl text-center">₹ 2_,999</div>
+                <div class="item-text text-sm font-normal text-center">₹ 2_,999</div>
               </a>
             </div>
           </div>
@@ -778,11 +699,11 @@
       <!-- FOURTH ROW SHOPS ENDS -->
     </main>
 
-<div id="canvas" class="canvas hidden h-screen w-screen bg-gray-600 static opacity-80">
-  <div class="logo hidden ml-[400px] pt-32 lg:block">
-    <img src="./img/ui/nile-logo.png" alt="" class="object-contain">
+    <div id="canvas" class="canvas hidden h-screen w-screen bg-gray-600 static opacity-80">
+      <div class="logo hidden ml-[400px] pt-32 lg:block">
+        <img src="./img/ui/nile-logo.png" alt="" class="object-contain">
+      </div>
+    </div>
   </div>
-</div>
-</div>
 </body>
 </html>
