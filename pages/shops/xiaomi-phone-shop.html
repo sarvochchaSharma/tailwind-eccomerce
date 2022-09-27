@@ -4,9 +4,392 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./../../style.css">
   <title>Xiaomi Phones</title>
 </head>
-<body>
-  
+<body id="body">
+
+  <div class="unsupported-error start-supporting:hidden text-4xl text-center bg-red-500 w-screen h-screen font-mono font-bold">
+    DEVICE NOT SUPPORTED!!
+  </div>
+
+  <div class="whole-content hidden start-supporting:block bg-gradient-to-b from-sky-700 to-sky-200 flex-col static" id="whole-content">
+    <!-- HEADER -->
+    <header class="flex flex-col w-full text-white">
+      <!-- SIDE NAVIGATION -->
+      <div class="sidenav border-2 border-black w-screen h-full hidden sm:w-[400px] z-40 absolute" id="sidenav">
+        <div class="sidenav-signin flex bg-slate-500 h-10 w-full items-center">
+          <div class="user-img h-6 w-6 ml-6">
+            <img src="./../../img/ui/user.png" alt="" class="w-full h-full object-contain cursor-pointer">
+          </div>
+          <div class="signin-text text-xl font-extrabold pl-2 text-white cursor-pointer"><a href="./pages/navigation/signin.html">Hello, Sign in</a></div>
+          <div class="close-menu-button ml-auto mr-4 h-6 w-6">
+            <a href="#" onclick="closeSideNav()"><img src="./../../img/ui/close.png"></a>
+          </div>
+        </div>
+        <div class="sidenav-container overflow-y-auto flex-col text-black bg-white pl-4 w-full h-screen space-y-4">
+          <div class="options-list-section">
+            <div class="options-list-heading text-xl font-bold pl-2 pt-4">What's New</div>
+            <div class="options-list-options flex-col space-y-4 font-medium">
+              <div class="sidebar-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">Best Sellers</div>
+              <div class="sidebar-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">Movies</div>
+              <div class="sidebar-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Games</div>
+            </div>
+          </div>
+          <hr>
+          <div class="options-list-section flex-col">
+            <div class="options-list-heading text-xl font-bold pl-2">Mobiles, Tablets & Accessories</div>
+            <div class="options-list-options flex-col space-y-4 font-medium">
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">All Mobile Phones</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Cases and Covers</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Screen Protectors</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Power Banks</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Refurbished</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Tablets</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Earphones</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Charging Cables & Adapters</div>
+            </div>
+          </div>
+          <hr>
+          <div class="options-list-section flex-col">
+            <div class="options-list-heading text-xl font-bold pl-2">Laptops & Computers</div>
+            <div class="options-list-options flex-col space-y-4 font-medium">
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">All Computer & Accessories</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Laptops</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Storage Devices</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Monitors</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Computer Parts</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Games</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Softwares</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Cables</div>
+            </div>
+          </div>
+          <hr>
+          <div class="options-list-section flex-col">
+            <div class="options-list-heading text-xl font-bold pl-2">Electrical Appliances</div>
+            <div class="options-list-options flex-col space-y-4 font-medium">
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">TVs</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Refrigerators</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Washing Machines</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">ACs</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Coolers</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Microwaves</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Kitchen</div>
+            </div>
+          </div>
+          <hr>
+          <div class="options-list-section flex-col">
+            <div class="options-list-heading text-xl font-bold pl-2">Fashion</div>
+            <div class="options-list-options flex-col space-y-4 font-medium">
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">Boys</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Girls</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Male</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Female</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Kids</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Shop by brands</div>
+            </div>
+          </div>
+          <hr>
+          <div class="options-list-section flex-col">
+            <div class="options-list-heading text-xl font-bold pl-2">Books</div>
+            <div class="options-list-options flex-col space-y-4 font-medium">
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">Drama</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Action</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Adventure</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Novels</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Fiction</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Sci-Fi</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Programming</div>
+            </div>
+          </div>
+          <hr>
+          <div class="options-list-section flex-col">
+            <div class="options-list-heading text-xl font-bold pl-2">Pay Bills & Bookings</div>
+            <div class="options-list-options flex-col space-y-4 font-medium">
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">Credit Card</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Electricity</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">LPG</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Loan Payment</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Movie Tickets</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Theme Parks</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Restaurants</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Concerts</div>
+            </div>
+          </div>
+          <hr>
+          <div class="options-list-section flex-col pb-40">
+            <div class="options-list-heading text-xl font-bold pl-2">Help & Account</div>
+            <div class="options-list-options flex-col space-y-4 font-medium">
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">Contact Support</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Return</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Your Account</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2 ">Sign in</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        function openSideNav()
+        {
+          document.getElementById('sidenav').style.display = 'inline-block';
+          document.getElementById('top-nav').style.display = 'none';
+          document.getElementById('categories-nav').style.display = 'none';
+          document.getElementById('main').style.display = 'none';
+          document.getElementById('canvas').style.display = 'block';
+          document.getElementById('body').style.overflowY = 'hidden';
+        }
+
+        function closeSideNav()
+        {
+          document.getElementById('sidenav').style.display = 'none';
+          document.getElementById('top-nav').style.display = 'inline-flex';
+          document.getElementById('categories-nav').style.display = 'inline-flex';
+          document.getElementById('main').style.display = 'block';
+          document.getElementById('canvas').style.display = 'none';
+          document.getElementById('body').style.overflowY = 'visible';
+          
+        }
+
+        function openRightMenu()
+        {
+          document.getElementById('right-menu').style.display = 'inline-block';
+          document.getElementById('body').style.overflowY = 'hidden';
+        }
+
+        function closeRightMenu()
+        {
+          document.getElementById('right-menu').style.display = 'none';
+          document.getElementById('body').style.overflowY = 'visible';
+          
+        }
+      </script>
+      <!-- SIDE NAVIGATION ENDS -->     
+
+      <!-- RIGHT SIDE MENU -->
+      <div class="right-side-menu border-2 border-black w-screen sm:w-[400px] right-0 h-full hidden sm:hidden z-40 absolute" id="right-menu">
+        <div class="right-side-menu-top flex bg-slate-500 h-16 w-full items-center">
+          <div class="close-menu-button ml-6 h-6 w-6">
+            <a href="#" onclick="closeRightMenu()"><img src="./../../img/ui/close.png" class=" "></a>
+          </div>
+          <div class="search flex w-full md:hidden mr-4">
+            <div class="search-input ml-8 w-auto flex-grow ">
+              <input type="search" name="" id="" placeholder=" Search..." class="w-full h-12 rounded-md pl-2 focus:ring focus:ring-orange-400 focus:outline-none text-black text-xl font-mono justify-center ml-auto">
+            </div>
+            <div class="search-icon w-12 h-12 p-2 bg-orange-500">
+              <img src="./../../img/ui/search.png" alt="" class="object-contain " >
+            </div>
+          </div>
+        </div>
+        <div class="right-menu-container overflow-y-auto flex-col text-black bg-white pl-4 w-full h-screen space-y-4">
+          <div class="right-menu-signin flex-col">
+            <div class="signin-btn bg-orange-600 mt-4 mx-auto w-40 text-center rounded-md cursor-pointer hover:bg-orange-700 p-2 text-xl"><a href="./pages/navigation/signin.html">Sign in</a></div>
+          </div>
+          <div class="right-menu-signup text-center">
+            <span>New customer?</span> <span class="cursor-pointer text-blue-400">Sign up</span>
+          </div>
+          <hr>
+          <div class="options-list-section flex-col">
+            <div class="options-list-heading text-xl font-bold pl-2">Your Account</div>
+            <div class="options-list-options flex-col space-y-4 font-medium">
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">Your Orders</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Your Wishlist</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Your Cart</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Your Memberships & Subscriptions</div>
+              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Your Seller Account</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- RIGHT SIDE MENU ENDS -->
+
+      <!-- TOP NAVIGATION BAR -->
+      <nav class="top-nav h-16 bg-slate-500 flex items-center justify-between" id="top-nav">
+        <!-- LOGO -->
+          <div class="logo flex-none">
+            <a href="./../../index.html"><img src="./../../img/ui/nile-logo.png" alt="" class="w-24 h-10 cursor-pointer"></a>
+          </div>
+        <!-- ADDRESS -->
+        <div class="address flex-none mx-auto cursor-pointer">
+          <!-- <div class="location-marker md:hidden">
+            <a href="">
+              <img src="./img/location-marker.png" alt="" class="w-6 h-6">
+            </a>
+          </div> -->
+          <div class="flex flex-row">
+            <div>
+              <a href=""><img src="./../../img/ui/location-marker.png" alt="" class="w-5 h-5 mt-6 mr-1"></a>
+            </div>
+            <div class="flex flex-col">
+              <a href="">
+                <div class="text-gray-400">Hello</div>
+                <div class="text-white text-xl">Select your address</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- SEARCH BOX -->
+        <div class="search mx-auto flex flex-row flex-none items-center">
+          <div class="search-bar hidden md:inline-block ">
+            <input type="search" name="" id="" placeholder=" Search" class="w-96 h-12 rounded-md pl-2 focus:ring focus:ring-orange-400 focus:outline-none text-black text-xl font-mono">
+          </div>
+          <div class="search-image bg-orange-400 p-2 h-12 hidden md:inline-block">
+            <img src="./../../img/ui/search.png" alt="" class="w-8 h-8 cursor-pointer">
+          </div>
+        </div>
+        <!-- ACCOUNT -->
+        <div class="account mx-auto flex-none">
+          <div class="account-options flex flex-row space-x-4 items-center ">
+            <div class="signin hidden lg:inline-block rounded-md bg-orange-600 hover:bg-orange-700 p-2 cursor-pointer">
+              <a href="./pages/navigation/signin.html">Sign in</a>
+            </div>
+            <div class="signup hidden lg:inline-block rounded-md bg-orange-400 hover:bg-orange-500 p-2 cursor-pointer">
+              <a href="./pages/navigation/signup.html">Sign up</a>
+            </div>
+            <div class="user-picture-large-screen flex-none">
+              <a href="#" onclick="openRightMenu()"><img src="./../../img/ui/user.png" alt="" class="w-8 h-8 hidden lg:inline-block cursor-pointer"></a>
+            </div>
+          </div>
+        </div>
+        <!-- CART -->
+        <a href="./pages/navigation/cart.html">
+          <div class="cart flex flex-row hidden lg:inline-flex space-x-2 rounded-md bg-orange-400 hover:bg-orange-500 p-1 cursor-pointer">
+            <div class="cart-logo">
+              <img src="./../../img/ui/shopping-cart.png" alt="" class="w-8 h-8">
+            </div>
+            <div class="cart-text pt-2 text-xl">
+              Cart
+            </div>
+          </div>
+        </a>
+        <!-- MENU -->
+        <a href="#" onclick="openRightMenu()">
+          <div class="menu flex-none lg:hidden">
+            <img src="./../../img/ui/menu.png" class="h-8 w-8 mr-4">
+          </div>
+        </a>
+      </nav>
+      <!-- TOP NAVIGATION BAR ENDS -->
+
+      <!-- CATEGORIES NAVIGATION BAR -->
+      <nav class="categories-nav bg-slate-400 h-12 flex items-center justify-between" id="categories-nav">
+        <div href="#" onclick="openSideNav()" class="hover:bg-slate-500 ml-4 flex-none">
+          <button class="flex space-x-2 p-2 cursor-pointer">
+            <div class="all-btn-img">
+              <img src="./../../img/ui/menu.png" alt="" class="h-6 w-6">
+            </div>
+              <div class="all-btn-txt">All</div>
+          </button>
+        </div>
+        <div class="flex-none cursor-pointer hover:bg-slate-500 p-2"><a href="./pages/navigation/best-sellers.html"> Best Sellers </a></div>
+        <div class="flex-none cursor-pointer"><a href="./pages/navigation/mobiles.html"> Mobiles </a></div>
+        <div class="flex-none hidden md:inline-block cursor-pointer hover:bg-slate-500 p-2"><a href="./pages/navigation/laptops.html"> Laptops </a></div>
+        <div class="flex-none hidden md:inline-block cursor-pointer hover:bg-slate-500 p-2"><a href="./pages/navigation/books.html"> Books </a></div>
+        <div class="flex-none hidden md:inline-block cursor-pointer hover:bg-slate-500 p-2"><a href="./pages/navigation/customer-service.html"> Customer Service </a></div>
+        <div class="hidden md:inline-block flex-none cursor-pointer hover:bg-slate-500 p-2"><a href="./pages/navigation/electronics.html"> Electronics </a></div>
+        <div class="hidden md:inline-block flex-none cursor-pointer hover:bg-slate-500 p-2"><a href="./pages/navigation/home-and-kitchen.html"> Home & Kitchen</a></div>
+        <div class="hidden lg:inline-block flex-none cursor-pointer hover:bg-slate-500 p-2"><a href="./pages/navigation/computers.html"> Computers </a></div>
+        <div class="hidden lg:inline-block flex-none cursor-pointer hover:bg-slate-500 p-2"><a href="./pages/navigation/fashion.html"> Fashion </a></div>
+        <div class="hidden lg:inline-block flex-none cursor-pointer hover:bg-slate-500 p-2"><a href="./pages/navigation/toys.html"> Toys </a></div>
+        <div class="hidden lg:inline-block flex-none cursor-pointer hover:bg-slate-500 p-2 mr-8"><a href="./pages/navigation/sell.html"> Sell </a></div>
+      </nav>
+      <!-- CATEGORIES NAVIGATION BAR ENDS-->     
+    </header>
+
+    <main class="main flex-col" id="main">
+      <div class="shop flex">
+        <div class="filters w-[300px] hidden md:inline-block">
+          <div class="filters-list-content flex-col text-black bg-white pl-4 space-y-4">
+            <div class="filters-list-section">
+              <div class="filters-list-heading text-xl font-bold pl-2 pt-4">Categories</div>
+              <div class="filters-list-options flex-col space-y-4 font-medium">
+                <div class="filters-list-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">Phones</div>
+                <div class="filters-list-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">Accessories</div>
+              </div>
+            </div>
+            <hr>
+            <div class="filters-list-section flex-col">
+              <div class="filters-list-heading text-xl font-bold pl-2">Brands</div>
+              <div class="filters-list-options flex-col space-y-4 font-medium">
+                <div class="filters-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">Xiaomi</div>
+                <div class="filters-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">Redmi</div>
+                <div class="filters-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">Poco</div>
+                <div class="filters-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">Black Shark</div>
+              </div>
+            </div>
+            <hr>
+            <div class="filters-list-section flex-col items-center">
+              <div class="filters-list-heading text-xl font-bold pl-2">Pay On Delivery</div>
+              <div class="filters-list-options flex space-y-4 font-medium hover:bg-gray-200">
+                <div class="checkbox cursor-pointer py-2.5 pl-2 my-4">
+                  <input type="checkbox" name="" id="" class="h-4 w-4">
+                </div>
+                <div class="filters-list-options cursor-pointer py-2 pl-2 my-4">Eligible Pay on Delivery</div>
+              </div>
+            </div>
+            <hr>
+            <div class="filters-list-section flex-col">
+              <div class="filters-list-heading text-xl font-bold pl-2">New</div>
+              <div class="filters-list-options flex-col space-y-4 font-medium">
+                <div class="filters-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">Last 30 days</div>
+                <div class="filters-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Last 90 days</div>
+              </div>
+            </div>
+            <hr>
+            <div class="filters-list-section flex-col">
+              <div class="filters-list-heading text-xl font-bold pl-2">Item condition</div>
+              <div class="filters-list-options flex-col space-y-4 font-medium">
+                <div class="filters-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">New</div>
+                <div class="filters-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Refurbished</div>
+              </div>
+            </div>
+            <hr>
+            <div class="filters-list-section flex-col">
+              <div class="filters-list-heading text-xl font-bold pl-2">Price</div>
+              <div class="filters-list-options flex-col space-y-4 font-medium">
+                <div class="filters-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">Under ₹1,000</div>
+                <div class="filters-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">₹1,000 - ₹2,000</div>
+                <div class="filters-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">₹2,000 - ₹10,000</div>
+                <div class="filters-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">₹10,000 - ₹20,000</div>
+                <div class="filters-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">₹20,000 - ₹30,000</div>
+                <div class="filters-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">₹30,000 - ₹40,000</div>
+                <div class="filters-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">Over ₹40,000</div>
+              </div>
+            </div>
+            <hr>
+            <div class="filters-list-section flex-col">
+              <div class="filters-list-heading text-xl font-bold pl-2">Discount</div>
+              <div class="filters-list-options flex-col space-y-4 font-medium">
+                <div class="filters-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">10% Off or more</div>
+                <div class="filters-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">20% Off or more</div>
+                <div class="filters-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">30% Off or more</div>
+                <div class="filters-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">40% Off or more</div>
+                <div class="filters-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">50% Off or more</div>
+                <div class="filters-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">60% Off or more</div>
+                <div class="filters-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">70% Off or more</div>
+              </div>
+            </div>
+            <hr>
+            <div class="filters-list-section flex-col items-center">
+              <div class="filters-list-heading text-xl font-bold pl-2">Availability</div>
+              <div class="filters-list-options flex space-y-4 font-medium hover:bg-gray-200">
+                <div class="checkbox cursor-pointer py-2.5 pl-2 my-4">
+                  <input type="checkbox" name="" id="" class="h-4 w-4">
+                </div>
+                <div class="options-list-options cursor-pointer py-2 pl-2 my-4">Include out of stock</div>
+              </div>
+            </div>
+            <hr>
+          </div>
+        </div>
+        
+      </div>
+    </main>
+
+    <div id="canvas" class="canvas hidden h-screen w-screen bg-gray-600 static opacity-80">
+      <div class="logo hidden md:block ml-[400px] w-[100%-400px] h-screen flex-initial">
+        <img src="./img/ui/nile-logo.png" alt="" class="w-full h-full object-contain">
+      </div>
+    </div>
+  </div>
 </body>
 </html>

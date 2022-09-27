@@ -17,113 +17,113 @@
     <!-- HEADER -->
     <header class="flex flex-col w-full text-white">
       <!-- SIDE NAVIGATION -->
-      <div class="sidenav border-2 border-black w-screen h-full hidden sm:w-[400px] z-40 absolute" id="sidenav">
+      <div class="sidenav w-screen h-full hidden sm:w-[400px] z-40 absolute" id="sidenav">
         <div class="sidenav-signin flex bg-slate-500 h-10 w-full items-center">
           <div class="user-img h-6 w-6 ml-6">
             <img src="./../../img/ui/user.png" alt="" class="w-full h-full object-contain cursor-pointer">
           </div>
-          <div class="signin-text text-xl font-extrabold pl-2 text-white cursor-pointer"><a href="./pages/navigation/signin.html">Hello, Sign in</a></div>
+          <div class="signin-text text-xl font-extrabold pl-2 text-white cursor-pointer"><a href="./../../pages/navigation/signin.html">Hello, Sign in</a></div>
           <div class="close-menu-button ml-auto mr-4 h-6 w-6">
             <a href="#" onclick="closeSideNav()"><img src="./../../img/ui/close.png"></a>
           </div>
         </div>
         <div class="sidenav-container overflow-y-auto flex-col text-black bg-white pl-4 w-full h-screen space-y-4">
-          <div class="options-list-section">
-            <div class="options-list-heading text-xl font-bold pl-2 pt-4">What's New</div>
-            <div class="options-list-options flex-col space-y-4 font-medium">
-              <div class="sidebar-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">Best Sellers</div>
-              <div class="sidebar-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">Movies</div>
-              <div class="sidebar-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Games</div>
+          <div class="side-nav-section">
+            <div class="side-nav-heading text-xl font-bold pl-2 pt-4">What's New</div>
+            <div class="side-nav-options flex-col space-y-4 font-medium">
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4"> <a href="./../../under-construction.html"> Best Sellers </a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4"> <a href="./../../under-construction.html"> Movies</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Games</a></div>
             </div>
           </div>
           <hr>
-          <div class="options-list-section flex-col">
-            <div class="options-list-heading text-xl font-bold pl-2">Mobiles, Tablets & Accessories</div>
-            <div class="options-list-options flex-col space-y-4 font-medium">
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">All Mobile Phones</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Cases and Covers</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Screen Protectors</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Power Banks</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Refurbished</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Tablets</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Earphones</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Charging Cables & Adapters</div>
+          <div class="side-nav-section flex-col">
+            <div class="side-nav-heading text-xl font-bold pl-2">Mobiles, Tablets & Accessories</div>
+            <div class="side-nav-options flex-col space-y-4 font-medium">
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4"> <a href="./../../under-construction.html"> All Mobile Phones</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Cases and Covers</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Screen Protectors</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Power Banks</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Refurbished</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Tablets</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Earphones</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Charging Cables & Adapters</a></div>
             </div>
           </div>
           <hr>
-          <div class="options-list-section flex-col">
-            <div class="options-list-heading text-xl font-bold pl-2">Laptops & Computers</div>
-            <div class="options-list-options flex-col space-y-4 font-medium">
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">All Computer & Accessories</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Laptops</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Storage Devices</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Monitors</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Computer Parts</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Games</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Softwares</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Cables</div>
+          <div class="side-nav-section flex-col">
+            <div class="side-nav-heading text-xl font-bold pl-2">Laptops & Computers</div>
+            <div class="side-nav-options flex-col space-y-4 font-medium">
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4"><a href="./../../under-construction.html"> All Computer & Accessories</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Laptops</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Storage Devices</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Monitors</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Computer Parts</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Games</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Softwares</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Cables</a></div>
             </div>
           </div>
           <hr>
-          <div class="options-list-section flex-col">
-            <div class="options-list-heading text-xl font-bold pl-2">Electrical Appliances</div>
-            <div class="options-list-options flex-col space-y-4 font-medium">
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">TVs</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Refrigerators</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Washing Machines</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">ACs</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Coolers</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Microwaves</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Kitchen</div>
+          <div class="side-nav-section flex-col">
+            <div class="side-nav-heading text-xl font-bold pl-2">Electrical Appliances</div>
+            <div class="side-nav-options flex-col space-y-4 font-medium">
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4"><a href="./../../under-construction.html"> TVs</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Refrigerators</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Washing Machines</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> ACs</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Coolers</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Microwaves</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Kitchen</a></div>
             </div>
           </div>
           <hr>
-          <div class="options-list-section flex-col">
-            <div class="options-list-heading text-xl font-bold pl-2">Fashion</div>
-            <div class="options-list-options flex-col space-y-4 font-medium">
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">Boys</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Girls</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Male</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Female</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Kids</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Shop by brands</div>
+          <div class="side-nav-section flex-col">
+            <div class="side-nav-heading text-xl font-bold pl-2">Fashion</div>
+            <div class="side-nav-options flex-col space-y-4 font-medium">
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4"><a href="./../../under-construction.html"> Boys</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Girls</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Male</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Female</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Kids</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Shop by brands</a></div>
             </div>
           </div>
           <hr>
-          <div class="options-list-section flex-col">
-            <div class="options-list-heading text-xl font-bold pl-2">Books</div>
-            <div class="options-list-options flex-col space-y-4 font-medium">
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">Drama</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Action</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Adventure</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Novels</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Fiction</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Sci-Fi</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Programming</div>
+          <div class="side-nav-section flex-col">
+            <div class="side-nav-heading text-xl font-bold pl-2">Books</div>
+            <div class="side-nav-options flex-col space-y-4 font-medium">
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4"><a href="./../../under-construction.html"> Drama</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Action</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Adventure</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Novels</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Fiction</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Sci-Fi</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Programming</a></div>
             </div>
           </div>
           <hr>
-          <div class="options-list-section flex-col">
-            <div class="options-list-heading text-xl font-bold pl-2">Pay Bills & Bookings</div>
-            <div class="options-list-options flex-col space-y-4 font-medium">
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">Credit Card</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Electricity</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">LPG</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Loan Payment</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Movie Tickets</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Theme Parks</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Restaurants</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Concerts</div>
+          <div class="side-nav-section flex-col">
+            <div class="side-nav-heading text-xl font-bold pl-2">Pay Bills & Bookings</div>
+            <div class="side-nav-options flex-col space-y-4 font-medium">
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4"><a href="./../../under-construction.html"> Credit Card</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Electricity</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> LPG</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Loan Payment</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Movie Tickets</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Theme Parks</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Restaurants</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Concerts</a></div>
             </div>
           </div>
           <hr>
-          <div class="options-list-section flex-col pb-40">
-            <div class="options-list-heading text-xl font-bold pl-2">Help & Account</div>
-            <div class="options-list-options flex-col space-y-4 font-medium">
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">Contact Support</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Return</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Your Account</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2 ">Sign in</div>
+          <div class="side-nav-section flex-col pb-40">
+            <div class="side-nav-heading text-xl font-bold pl-2">Help & Account</div>
+            <div class="side-nav-options flex-col space-y-4 font-medium">
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4"><a href="./../../under-construction.html"> Contact Support</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Return</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Your Account</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 ">a <a href="./../../under-construction.html"> Sign in</a></div>
             </div>
           </div>
         </div>
@@ -182,20 +182,20 @@
         </div>
         <div class="right-menu-container overflow-y-auto flex-col text-black bg-white pl-4 w-full h-screen space-y-4">
           <div class="right-menu-signin flex-col">
-            <div class="signin-btn bg-orange-600 mt-4 mx-auto w-40 text-center rounded-md cursor-pointer hover:bg-orange-700 p-2 text-xl"><a href="./pages/navigation/signin.html">Sign in</a></div>
+            <div class="signin-btn bg-orange-600 mt-4 mx-auto w-40 text-center rounded-md cursor-pointer hover:bg-orange-700 p-2 text-xl"><a href="./../../pages/navigation/signin.html">Sign in</a></div>
           </div>
           <div class="right-menu-signup text-center">
-            <span>New customer?</span> <span class="cursor-pointer text-blue-400">Sign up</span>
+            <span>New customer?</span> <span class="cursor-pointer text-blue-400"><a href="./../../pages/navigation/signup.html">Sign up</a></span>
           </div>
           <hr>
-          <div class="options-list-section flex-col">
-            <div class="options-list-heading text-xl font-bold pl-2">Your Account</div>
-            <div class="options-list-options flex-col space-y-4 font-medium">
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">Your Orders</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Your Wishlist</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Your Cart</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Your Memberships & Subscriptions</div>
-              <div class="options-list-options cursor-pointer hover:bg-gray-200 py-2 pl-2">Your Seller Account</div>
+          <div class="side-nav-section flex-col">
+            <div class="side-nav-heading text-xl font-bold pl-2">Your Account</div>
+            <div class="side-nav-options flex-col space-y-4 font-medium">
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">Your Orders</div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Your Wishlist</div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Your Cart</div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Your Memberships & Subscriptions</div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Your Seller Account</div>
             </div>
           </div>
         </div>
@@ -206,13 +206,13 @@
       <nav class="top-nav h-16 bg-slate-500 flex items-center justify-between" id="top-nav">
         <!-- LOGO -->
           <div class="logo flex-none">
-            <a href="./../../index.html"><img src="./../../img/ui/nile-logo.png" alt="" class="w-24 h-10 cursor-pointer"></a>
+            <a href="index.html"><img src="./../../img/ui/nile-logo.png" alt="" class="w-24 h-10 cursor-pointer"></a>
           </div>
         <!-- ADDRESS -->
         <div class="address flex-none mx-auto cursor-pointer">
           <!-- <div class="location-marker md:hidden">
             <a href="">
-              <img src="./img/location-marker.png" alt="" class="w-6 h-6">
+              <img src="./../../img/location-marker.png" alt="" class="w-6 h-6">
             </a>
           </div> -->
           <div class="flex flex-row">
@@ -240,10 +240,10 @@
         <div class="account mx-auto flex-none">
           <div class="account-options flex flex-row space-x-4 items-center ">
             <div class="signin hidden lg:inline-block rounded-md bg-orange-600 hover:bg-orange-700 p-2 cursor-pointer">
-              <a href="./pages/navigation/signin.html">Sign in</a>
+              <a href="./../../pages/navigation/signin.html">Sign in</a>
             </div>
             <div class="signup hidden lg:inline-block rounded-md bg-orange-400 hover:bg-orange-500 p-2 cursor-pointer">
-              <a href="./pages/navigation/signup.html">Sign up</a>
+              <a href="./../../pages/navigation/signup.html">Sign up</a>
             </div>
             <div class="user-picture-large-screen flex-none">
               <a href="#" onclick="openRightMenu()"><img src="./../../img/ui/user.png" alt="" class="w-8 h-8 hidden lg:inline-block cursor-pointer"></a>
@@ -251,7 +251,7 @@
           </div>
         </div>
         <!-- CART -->
-        <a href="./pages/navigation/cart.html">
+        <a href="./../../pages/navigation/cart.html">
           <div class="cart flex flex-row hidden lg:inline-flex space-x-2 rounded-md bg-orange-400 hover:bg-orange-500 p-1 cursor-pointer">
             <div class="cart-logo">
               <img src="./../../img/ui/shopping-cart.png" alt="" class="w-8 h-8">
@@ -263,7 +263,7 @@
         </a>
         <!-- MENU -->
         <a href="#" onclick="openRightMenu()">
-          <div class="menu flex-none lg:hidden">
+          <div class="menu flex-none md:hidden">
             <img src="./../../img/ui/menu.png" class="h-8 w-8 mr-4">
           </div>
         </a>
@@ -280,24 +280,24 @@
               <div class="all-btn-txt">All</div>
           </button>
         </div>
-        <div class="flex-none cursor-pointer hover:bg-slate-500 p-2"><a href="./pages/navigation/best-sellers.html"> Best Sellers </a></div>
-        <div class="flex-none cursor-pointer"><a href="./pages/navigation/mobiles.html"> Mobiles </a></div>
-        <div class="flex-none hidden md:inline-block cursor-pointer hover:bg-slate-500 p-2"><a href="./pages/navigation/laptops.html"> Laptops </a></div>
-        <div class="flex-none hidden md:inline-block cursor-pointer hover:bg-slate-500 p-2"><a href="./pages/navigation/books.html"> Books </a></div>
-        <div class="flex-none hidden md:inline-block cursor-pointer hover:bg-slate-500 p-2"><a href="./pages/navigation/customer-service.html"> Customer Service </a></div>
-        <div class="hidden md:inline-block flex-none cursor-pointer hover:bg-slate-500 p-2"><a href="./pages/navigation/electronics.html"> Electronics </a></div>
-        <div class="hidden md:inline-block flex-none cursor-pointer hover:bg-slate-500 p-2"><a href="./pages/navigation/home-and-kitchen.html"> Home & Kitchen</a></div>
-        <div class="hidden lg:inline-block flex-none cursor-pointer hover:bg-slate-500 p-2"><a href="./pages/navigation/computers.html"> Computers </a></div>
-        <div class="hidden lg:inline-block flex-none cursor-pointer hover:bg-slate-500 p-2"><a href="./pages/navigation/fashion.html"> Fashion </a></div>
-        <div class="hidden lg:inline-block flex-none cursor-pointer hover:bg-slate-500 p-2"><a href="./pages/navigation/toys.html"> Toys </a></div>
-        <div class="hidden lg:inline-block flex-none cursor-pointer hover:bg-slate-500 p-2 mr-8"><a href="./pages/navigation/sell.html"> Sell </a></div>
+        <div class="flex-none cursor-pointer hover:bg-slate-500 p-2"><a href="./../../pages/navigation/best-sellers.html"> Best Sellers </a></div>
+        <div class="flex-none cursor-pointer hover:bg-slate-500 p-2"><a href="./../../pages/navigation/mobiles.html"> Mobiles </a></div>
+        <div class="flex-none hidden md:inline-block cursor-pointer hover:bg-slate-500 p-2"><a href="./../../pages/navigation/laptops.html"> Laptops </a></div>
+        <div class="flex-none hidden md:inline-block cursor-pointer hover:bg-slate-500 p-2"><a href="./../../pages/navigation/books.html"> Books </a></div>
+        <div class="flex-none hidden md:inline-block cursor-pointer hover:bg-slate-500 p-2"><a href="./../../pages/navigation/customer-service.html"> Customer Service </a></div>
+        <div class="hidden md:inline-block flex-none cursor-pointer hover:bg-slate-500 p-2"><a href="./../../pages/navigation/electronics.html"> Electronics </a></div>
+        <div class="hidden md:inline-block flex-none cursor-pointer hover:bg-slate-500 p-2"><a href="./../../pages/navigation/home-and-kitchen.html"> Home & Kitchen</a></div>
+        <div class="hidden lg:inline-block flex-none cursor-pointer hover:bg-slate-500 p-2"><a href="./../../pages/navigation/computers.html"> Computers </a></div>
+        <div class="hidden lg:inline-block flex-none cursor-pointer hover:bg-slate-500 p-2"><a href="./../../pages/navigation/fashion.html"> Fashion </a></div>
+        <div class="hidden lg:inline-block flex-none cursor-pointer hover:bg-slate-500 p-2"><a href="./../../pages/navigation/toys.html"> Toys </a></div>
+        <div class="hidden lg:inline-block flex-none cursor-pointer hover:bg-slate-500 p-2 mr-8"><a href="./../../pages/navigation/sell.html"> Sell </a></div>
       </nav>
       <!-- CATEGORIES NAVIGATION BAR ENDS-->     
     </header>
 
     <main class="main flex-col" id="main">
-      <div class="shop flex">
-        <div class="filters w-[300px] hidden md:inline-block">
+      <div class="shop flex max-w-[1200px]">
+        <div class="filters w-[300px] flex-none hidden md:inline-block border-2 border-black">
           <div class="filters-list-content flex-col text-black bg-white pl-4 space-y-4">
             <div class="filters-list-section">
               <div class="filters-list-heading text-xl font-bold pl-2 pt-4">Categories</div>
@@ -366,26 +366,421 @@
               </div>
             </div>
             <hr>
-            <div class="filters-list-section flex-col items-center">
+            <div class="filters-list-section flex-col">
               <div class="filters-list-heading text-xl font-bold pl-2">Availability</div>
               <div class="filters-list-options flex space-y-4 font-medium hover:bg-gray-200">
                 <div class="checkbox cursor-pointer py-2.5 pl-2 my-4">
                   <input type="checkbox" name="" id="" class="h-4 w-4">
                 </div>
-                <div class="options-list-options cursor-pointer py-2 pl-2 my-4">Include out of stock</div>
+                <div class="filters-list-options cursor-pointer py-2 pl-2 my-4">Include out of stock</div>
               </div>
             </div>
             <hr>
           </div>
         </div>
-        
+        <div class="shop-content mb-20 flex-col w-full md:w-[100%-300px] mx-0 lg:mx-12 px-12 lg:px-0">
+          <div class="banner-top bg-none h-44 justify-center mt-10">
+            <a href="#"><img src="./../../img/tech/iphone-14-banner.png" alt="" class="w-full h-full object-cover rounded-2xl cursor-pointer"></a>
+          </div>
+          <div class="items-cards bg-white flex flex-wrap mt-10 w-full h-full md:h-[900px]">
+            <a href="./../products/iphone.html" class=" item-card hover:bg-gray-200   w-1/2 h-1/6 md:w-1/3 md:h-1/4 lg:w-1/3 flex-col flex-none border-2 border-gray-100 ">
+              <div class="item-name text-center text-2xl font-bold">Phone</div>
+              <div class="item-img">
+                <img src="./../../img/tech/phone.png" alt="" class="w-auto h-auto mx-auto max-h-32">
+              </div>
+              <div class="item-price text-center text-xl text-semibold">₹76,999</div>
+              <div class="item-rating flex text-yellow-400 justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill="url(#30%)" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-black">4.3</span>               
+              </div>
+            </a>
+            <a href="./../../under-construction.html" class=" item-card hover:bg-gray-200   w-1/2 h-1/6 md:w-1/3 md:h-1/4 lg:w-1/3 flex-col flex-none border-2 border-gray-100 ">
+              <div class="item-name text-center text-2xl font-bold">Phone</div>
+              <div class="item-img">
+                <img src="./../../img/tech/phone.png" alt="" class="w-auto h-auto mx-auto max-h-32">
+              </div>
+              <div class="item-price text-center text-xl text-semibold">₹49,999</div>
+              <div class="item-rating flex text-yellow-400 justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill="url(#70%)" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-black">4.7</span>               
+              </div>
+            </a>
+            <a href="./../../under-construction.html" class=" item-card hover:bg-gray-200   w-1/2 h-1/6 md:w-1/3 md:h-1/4 lg:w-1/3 flex-col flex-none border-2 border-gray-100 ">
+              <div class="item-name text-center text-2xl font-bold">Phone</div>
+              <div class="item-img">
+                <img src="./../../img/tech/phone.png" alt="" class="w-auto h-auto mx-auto max-h-32">
+              </div>
+              <div class="item-price text-center text-xl text-semibold">₹54,999</div>
+              <div class="item-rating flex text-yellow-400 justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill="url(#60%)" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-black">4.6</span>               
+              </div>
+            </a>
+            <a href="./../../under-construction.html" class=" item-card hover:bg-gray-200   w-1/2 h-1/6 md:w-1/3 md:h-1/4 lg:w-1/3 flex-col flex-none border-2 border-gray-100 ">
+              <div class="item-name text-center text-2xl font-bold">Phone</div>
+              <div class="item-img">
+                <img src="./../../img/tech/phone.png" alt="" class="w-auto h-auto mx-auto max-h-32">
+              </div>
+              <div class="item-price text-center text-xl text-semibold">₹76,999</div>
+              <div class="item-rating flex text-yellow-400 justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill="url(#grad)" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-black">4.5</span>               
+              </div>
+            </a>
+            <a href="./../../under-construction.html" class=" item-card hover:bg-gray-200   w-1/2 h-1/6 md:w-1/3 md:h-1/4 lg:w-1/3 flex-col flex-none border-2 border-gray-100 ">
+              <div class="item-name text-center text-2xl font-bold">Phone</div>
+              <div class="item-img">
+                <img src="./../../img/tech/phone.png" alt="" class="w-auto h-auto mx-auto max-h-32">
+              </div>
+              <div class="item-price text-center text-xl text-semibold">₹76,999</div>
+              <div class="item-rating flex text-yellow-400 justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill="url(#grad)" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-black">4.5</span>               
+              </div>
+            </a>
+            <a href="./../../under-construction.html" class=" item-card hover:bg-gray-200   w-1/2 h-1/6 md:w-1/3 md:h-1/4 lg:w-1/3 flex-col flex-none border-2 border-gray-100 ">
+              <div class="item-name text-center text-2xl font-bold">Phone</div>
+              <div class="item-img">
+                <img src="./../../img/tech/phone.png" alt="" class="w-auto h-auto mx-auto max-h-32">
+              </div>
+              <div class="item-price text-center text-xl text-semibold">₹76,999</div>
+              <div class="item-rating flex text-yellow-400 justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill="url(#40%)" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-black">4.4</span>               
+              </div>
+            </a>
+            <a href="./../../under-construction.html" class=" item-card hover:bg-gray-200   w-1/2 h-1/6 md:w-1/3 md:h-1/4 lg:w-1/3 flex-col flex-none border-2 border-gray-100 ">
+              <div class="item-name text-center text-2xl font-bold">Phone</div>
+              <div class="item-img">
+                <img src="./../../img/tech/phone.png" alt="" class="w-auto h-auto mx-auto max-h-32">
+              </div>
+              <div class="item-price text-center text-xl text-semibold">₹76,999</div>
+              <div class="item-rating flex text-yellow-400 justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <defs>
+                    <linearGradient id="grad">
+                      <stop offset="50%" stop-color="#facc15"/>
+                      <stop offset="50%" stop-color="grey"/>
+                    </linearGradient>
+                  </defs>
+                  <path fill="url(#grad)" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-black">4.5</span>               
+              </div>
+            </a>
+            <a href="./../../under-construction.html" class=" item-card hover:bg-gray-200   w-1/2 h-1/6 md:w-1/3 md:h-1/4 lg:w-1/3 flex-col flex-none border-2 border-gray-100 ">
+              <div class="item-name text-center text-2xl font-bold">Phone</div>
+              <div class="item-img">
+                <img src="./../../img/tech/phone.png" alt="" class="w-auto h-auto mx-auto max-h-32">
+              </div>
+              <div class="item-price text-center text-xl text-semibold">₹76,999</div>
+              <div class="item-rating flex text-yellow-400 justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill="url(#20%)" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-black">4.2</span>               
+              </div>
+            </a>
+            <a href="./../../under-construction.html" class=" item-card hover:bg-gray-200   w-1/2 h-1/6 md:w-1/3 md:h-1/4 lg:w-1/3 flex-col flex-none border-2 border-gray-100 ">
+              <div class="item-name text-center text-2xl font-bold">Phone</div>
+              <div class="item-img">
+                <img src="./../../img/tech/phone.png" alt="" class="w-auto h-auto mx-auto max-h-32">
+              </div>
+              <div class="item-price text-center text-xl text-semibold">₹76,999</div>
+              <div class="item-rating flex text-yellow-400 justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                  <path fill="url(#90%)" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-black">4.9</span>               
+              </div>
+            </a>
+            <a href="./../../under-construction.html" class=" item-card hover:bg-gray-200   w-1/2 h-1/6 md:w-1/3 md:h-1/4 lg:w-1/3 flex-col flex-none border-2 border-gray-100 ">
+              <div class="item-name text-center text-2xl font-bold">Phone</div>
+              <div class="item-img">
+                <img src="./../../img/tech/phone.png" alt="" class="w-auto h-auto mx-auto max-h-32">
+              </div>
+              <div class="item-price text-center text-xl text-semibold">₹76,999</div>
+              <div class="item-rating flex text-yellow-400 justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill="url(#grad)" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-black">4.5</span>               
+              </div>
+            </a>
+            <a href="./../../under-construction.html" class=" item-card hover:bg-gray-200   w-1/2 h-1/6 md:w-1/3 md:h-1/4 lg:w-1/3 flex-col flex-none border-2 border-gray-100 ">
+              <div class="item-name text-center text-2xl font-bold">Phone</div>
+              <div class="item-img">
+                <img src="./../../img/tech/phone.png" alt="" class="w-auto h-auto mx-auto max-h-32">
+              </div>
+              <div class="item-price text-center text-xl text-semibold">₹76,999</div>
+              <div class="item-rating flex text-yellow-400 justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill="url(#70%)" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-black">4.7</span>               
+              </div>
+            </a>
+            <a href="./../../under-construction.html" class=" item-card hover:bg-gray-200   w-1/2 h-1/6 md:w-1/3 md:h-1/4 lg:w-1/3 flex-col flex-none border-2 border-gray-100 ">
+              <div class="item-name text-center text-2xl font-bold">Phone</div>
+              <div class="item-img">
+                <img src="./../../img/tech/phone.png" alt="" class="w-auto h-auto mx-auto max-h-32">
+              </div>
+              <div class="item-price text-center text-xl text-semibold">₹76,999</div>
+              <div class="item-rating flex text-yellow-400 justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill="url(#10%)" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-black">4.1</span>               
+              </div>
+            </a>         
+          </div>
+
+          <div class="shop-navigation flex justify-center mt-20">
+            <a href="#" class="p-2 bg-slate-400 hover:bg-slate-500"><< Previous</a>
+            <a href="#" class="1 p-2">1</a>
+            <a href="#" class="1 p-2">2</a>
+            <a href="#" class="1 p-2">3</a>
+            <a href="#" class="p-2 bg-slate-400 hover:bg-slate-500">Next >></a>
+          </div>
+          
+        </div>
       </div>
     </main>
 
     <div id="canvas" class="canvas hidden h-screen w-screen bg-gray-600 static opacity-80">
-      <div class="logo hidden ml-[400px] pt-32 lg:block">
-        <img src="./../../img/ui/nile-logo.png" alt="" class="object-contain">
+      <div class="logo hidden md:block ml-[400px] w-[100%-400px] h-screen flex-initial">
+        <img src="./../../img/ui/nile-logo.png" alt="" class="w-full h-full object-contain">
       </div>
+    </div>
+
+    <div class="decimal-rating-svg">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+        <defs>
+          <linearGradient id="10%">
+            <stop offset="10%" stop-color="#facc15"/>
+            <stop offset="10%" stop-color="grey"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+        <defs>
+          <linearGradient id="20%">
+            <stop offset="20%" stop-color="#facc15"/>
+            <stop offset="20%" stop-color="grey"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+        <defs>
+          <linearGradient id="30%">
+            <stop offset="30%" stop-color="#facc15"/>
+            <stop offset="30%" stop-color="grey"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+        <defs>
+          <linearGradient id="40%">
+            <stop offset="40%" stop-color="#facc15"/>
+            <stop offset="40%" stop-color="grey"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+        <defs>
+          <linearGradient id="50%">
+            <stop offset="50%" stop-color="#facc15"/>
+            <stop offset="50%" stop-color="grey"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+        <defs>
+          <linearGradient id="60%">
+            <stop offset="60%" stop-color="#facc15"/>
+            <stop offset="60%" stop-color="grey"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+        <defs>
+          <linearGradient id="70%">
+            <stop offset="70%" stop-color="#facc15"/>
+            <stop offset="70%" stop-color="grey"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+        <defs>
+          <linearGradient id="80%">
+            <stop offset="80%" stop-color="#facc15"/>
+            <stop offset="80%" stop-color="grey"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+        <defs>
+          <linearGradient id="90%">
+            <stop offset="90%" stop-color="#facc15"/>
+            <stop offset="90%" stop-color="grey"/>
+          </linearGradient>
+        </defs>
+      </svg>
     </div>
   </div>
 </body>

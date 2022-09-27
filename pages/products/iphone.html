@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./../../style.css">
+  <title>Shop iPhones</title>
+</head>
+<body id="body">
+
+  <div class="unsupported-error start-supporting:hidden text-4xl text-center bg-red-500 w-screen h-screen font-mono font-bold">
+    DEVICE NOT SUPPORTED!!
+  </div>
+
+  <div class="whole-content hidden start-supporting:block bg-gradient-to-b from-sky-700 to-sky-200 flex-col static" id="whole-content">
+    <!-- HEADER -->
+    <header class="flex flex-col w-full text-white">
+      <!-- SIDE NAVIGATION -->
+      <div class="sidenav w-screen h-full hidden sm:w-[400px] z-40 absolute" id="sidenav">
+        <div class="sidenav-signin flex bg-slate-500 h-10 w-full items-center">
+          <div class="user-img h-6 w-6 ml-6">
+            <img src="./../../img/ui/user.png" alt="" class="w-full h-full object-contain cursor-pointer">
+          </div>
+          <div class="signin-text text-xl font-extrabold pl-2 text-white cursor-pointer"><a href="./../../pages/navigation/signin.html">Hello, Sign in</a></div>
+          <div class="close-menu-button ml-auto mr-4 h-6 w-6">
+            <a href="#" onclick="closeSideNav()"><img src="./../../img/ui/close.png"></a>
+          </div>
+        </div>
+        <div class="sidenav-container overflow-y-auto flex-col text-black bg-white pl-4 w-full h-screen space-y-4">
+          <div class="side-nav-section">
+            <div class="side-nav-heading text-xl font-bold pl-2 pt-4">What's New</div>
+            <div class="side-nav-options flex-col space-y-4 font-medium">
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4"> <a href="./../../under-construction.html"> Best Sellers </a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4"> <a href="./../../under-construction.html"> Movies</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Games</a></div>
+            </div>
+          </div>
+          <hr>
+          <div class="side-nav-section flex-col">
+            <div class="side-nav-heading text-xl font-bold pl-2">Mobiles, Tablets & Accessories</div>
+            <div class="side-nav-options flex-col space-y-4 font-medium">
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4"> <a href="./../../under-construction.html"> All Mobile Phones</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Cases and Covers</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Screen Protectors</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Power Banks</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Refurbished</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Tablets</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Earphones</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Charging Cables & Adapters</a></div>
+            </div>
+          </div>
+          <hr>
+          <div class="side-nav-section flex-col">
+            <div class="side-nav-heading text-xl font-bold pl-2">Laptops & Computers</div>
+            <div class="side-nav-options flex-col space-y-4 font-medium">
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4"><a href="./../../under-construction.html"> All Computer & Accessories</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Laptops</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Storage Devices</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Monitors</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Computer Parts</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Games</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Softwares</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Cables</a></div>
+            </div>
+          </div>
+          <hr>
+          <div class="side-nav-section flex-col">
+            <div class="side-nav-heading text-xl font-bold pl-2">Electrical Appliances</div>
+            <div class="side-nav-options flex-col space-y-4 font-medium">
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4"><a href="./../../under-construction.html"> TVs</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Refrigerators</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Washing Machines</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> ACs</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Coolers</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Microwaves</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Kitchen</a></div>
+            </div>
+          </div>
+          <hr>
+          <div class="side-nav-section flex-col">
+            <div class="side-nav-heading text-xl font-bold pl-2">Fashion</div>
+            <div class="side-nav-options flex-col space-y-4 font-medium">
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4"><a href="./../../under-construction.html"> Boys</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Girls</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Male</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Female</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Kids</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Shop by brands</a></div>
+            </div>
+          </div>
+          <hr>
+          <div class="side-nav-section flex-col">
+            <div class="side-nav-heading text-xl font-bold pl-2">Books</div>
+            <div class="side-nav-options flex-col space-y-4 font-medium">
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4"><a href="./../../under-construction.html"> Drama</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Action</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Adventure</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Novels</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Fiction</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Sci-Fi</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Programming</a></div>
+            </div>
+          </div>
+          <hr>
+          <div class="side-nav-section flex-col">
+            <div class="side-nav-heading text-xl font-bold pl-2">Pay Bills & Bookings</div>
+            <div class="side-nav-options flex-col space-y-4 font-medium">
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4"><a href="./../../under-construction.html"> Credit Card</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Electricity</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> LPG</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Loan Payment</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Movie Tickets</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Theme Parks</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Restaurants</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Concerts</a></div>
+            </div>
+          </div>
+          <hr>
+          <div class="side-nav-section flex-col pb-40">
+            <div class="side-nav-heading text-xl font-bold pl-2">Help & Account</div>
+            <div class="side-nav-options flex-col space-y-4 font-medium">
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4"><a href="./../../under-construction.html"> Contact Support</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Return</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2"> <a href="./../../under-construction.html"> Your Account</a></div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 ">a <a href="./../../under-construction.html"> Sign in</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        function openSideNav()
+        {
+          document.getElementById('sidenav').style.display = 'inline-block';
+          document.getElementById('top-nav').style.display = 'none';
+          document.getElementById('categories-nav').style.display = 'none';
+          document.getElementById('main').style.display = 'none';
+          document.getElementById('canvas').style.display = 'block';
+          document.getElementById('body').style.overflowY = 'hidden';
+        }
+
+        function closeSideNav()
+        {
+          document.getElementById('sidenav').style.display = 'none';
+          document.getElementById('top-nav').style.display = 'inline-flex';
+          document.getElementById('categories-nav').style.display = 'inline-flex';
+          document.getElementById('main').style.display = 'block';
+          document.getElementById('canvas').style.display = 'none';
+          document.getElementById('body').style.overflowY = 'visible';
+          
+        }
+
+        function openRightMenu()
+        {
+          document.getElementById('right-menu').style.display = 'inline-block';
+          document.getElementById('body').style.overflowY = 'hidden';
+        }
+
+        function closeRightMenu()
+        {
+          document.getElementById('right-menu').style.display = 'none';
+          document.getElementById('body').style.overflowY = 'visible';
+          
+        }
+      </script>
+      <!-- SIDE NAVIGATION ENDS -->     
+
+      <!-- RIGHT SIDE MENU -->
+      <div class="right-side-menu border-2 border-black w-screen sm:w-[400px] right-0 h-full hidden sm:hidden z-40 absolute" id="right-menu">
+        <div class="right-side-menu-top flex bg-slate-500 h-16 w-full items-center">
+          <div class="close-menu-button ml-6 h-6 w-6">
+            <a href="#" onclick="closeRightMenu()"><img src="./../../img/ui/close.png" class=" "></a>
+          </div>
+          <div class="search flex w-full md:hidden mr-4">
+            <div class="search-input ml-8 w-auto flex-grow ">
+              <input type="search" name="" id="" placeholder=" Search..." class="w-full h-12 rounded-md pl-2 focus:ring focus:ring-orange-400 focus:outline-none text-black text-xl font-mono justify-center ml-auto">
+            </div>
+            <div class="search-icon w-12 h-12 p-2 bg-orange-500">
+              <img src="./../../img/ui/search.png" alt="" class="object-contain " >
+            </div>
+          </div>
+        </div>
+        <div class="right-menu-container overflow-y-auto flex-col text-black bg-white pl-4 w-full h-screen space-y-4">
+          <div class="right-menu-signin flex-col">
+            <div class="signin-btn bg-orange-600 mt-4 mx-auto w-40 text-center rounded-md cursor-pointer hover:bg-orange-700 p-2 text-xl"><a href="./../../pages/navigation/signin.html">Sign in</a></div>
+          </div>
+          <div class="right-menu-signup text-center">
+            <span>New customer?</span> <span class="cursor-pointer text-blue-400"><a href="./../../pages/navigation/signup.html">Sign up</a></span>
+          </div>
+          <hr>
+          <div class="side-nav-section flex-col">
+            <div class="side-nav-heading text-xl font-bold pl-2">Your Account</div>
+            <div class="side-nav-options flex-col space-y-4 font-medium">
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2 my-4">Your Orders</div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Your Wishlist</div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Your Cart</div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Your Memberships & Subscriptions</div>
+              <div class="side-nav-option cursor-pointer hover:bg-gray-200 py-2 pl-2">Your Seller Account</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- RIGHT SIDE MENU ENDS -->
+
+      <!-- TOP NAVIGATION BAR -->
+      <nav class="top-nav h-16 bg-slate-500 flex items-center justify-between" id="top-nav">
+        <!-- LOGO -->
+          <div class="logo flex-none">
+            <a href="./../../index.html"><img src="./../../img/ui/nile-logo.png" alt="" class="w-24 h-10 cursor-pointer"></a>
+          </div>
+        <!-- ADDRESS -->
+        <div class="address flex-none mx-auto cursor-pointer">
+          <!-- <div class="location-marker md:hidden">
+            <a href="">
+              <img src="./../../img/location-marker.png" alt="" class="w-6 h-6">
+            </a>
+          </div> -->
+          <div class="flex flex-row">
+            <div>
+              <a href=""><img src="./../../img/ui/location-marker.png" alt="" class="w-5 h-5 mt-6 mr-1"></a>
+            </div>
+            <div class="flex flex-col">
+              <a href="">
+                <div class="text-gray-400">Hello</div>
+                <div class="text-white text-xl">Select your address</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- SEARCH BOX -->
+        <div class="search mx-auto flex flex-row flex-none items-center">
+          <div class="search-bar hidden md:inline-block ">
+            <input type="search" name="" id="" placeholder=" Search" class="w-96 h-12 rounded-md pl-2 focus:ring focus:ring-orange-400 focus:outline-none text-black text-xl font-mono">
+          </div>
+          <div class="search-image bg-orange-400 p-2 h-12 hidden md:inline-block">
+            <img src="./../../img/ui/search.png" alt="" class="w-8 h-8 cursor-pointer">
+          </div>
+        </div>
+        <!-- ACCOUNT -->
+        <div class="account mx-auto flex-none">
+          <div class="account-options flex flex-row space-x-4 items-center ">
+            <div class="signin hidden lg:inline-block rounded-md bg-orange-600 hover:bg-orange-700 p-2 cursor-pointer">
+              <a href="./../../pages/navigation/signin.html">Sign in</a>
+            </div>
+            <div class="signup hidden lg:inline-block rounded-md bg-orange-400 hover:bg-orange-500 p-2 cursor-pointer">
+              <a href="./../../pages/navigation/signup.html">Sign up</a>
+            </div>
+            <div class="user-picture-large-screen flex-none">
+              <a href="#" onclick="openRightMenu()"><img src="./../../img/ui/user.png" alt="" class="w-8 h-8 hidden lg:inline-block cursor-pointer"></a>
+            </div>
+          </div>
+        </div>
+        <!-- CART -->
+        <a href="./../../pages/navigation/cart.html">
+          <div class="cart flex flex-row hidden lg:inline-flex space-x-2 rounded-md bg-orange-400 hover:bg-orange-500 p-1 cursor-pointer">
+            <div class="cart-logo">
+              <img src="./../../img/ui/shopping-cart.png" alt="" class="w-8 h-8">
+            </div>
+            <div class="cart-text pt-2 text-xl">
+              Cart
+            </div>
+          </div>
+        </a>
+        <!-- MENU -->
+        <a href="#" onclick="openRightMenu()">
+          <div class="menu flex-none md:hidden">
+            <img src="./../../img/ui/menu.png" class="h-8 w-8 mr-4">
+          </div>
+        </a>
+      </nav>
+      <!-- TOP NAVIGATION BAR ENDS -->
+
+      <!-- CATEGORIES NAVIGATION BAR -->
+      <nav class="categories-nav bg-slate-400 h-12 flex items-center justify-between" id="categories-nav">
+        <div href="#" onclick="openSideNav()" class="hover:bg-slate-500 ml-4 flex-none">
+          <button class="flex space-x-2 p-2 cursor-pointer">
+            <div class="all-btn-img">
+              <img src="./../../img/ui/menu.png" alt="" class="h-6 w-6">
+            </div>
+              <div class="all-btn-txt">All</div>
+          </button>
+        </div>
+        <div class="flex-none cursor-pointer hover:bg-slate-500 p-2"><a href="./../../pages/navigation/best-sellers.html"> Best Sellers </a></div>
+        <div class="flex-none cursor-pointer hover:bg-slate-500 p-2"><a href="./../../pages/navigation/mobiles.html"> Mobiles </a></div>
+        <div class="flex-none hidden md:inline-block cursor-pointer hover:bg-slate-500 p-2"><a href="./../../pages/navigation/laptops.html"> Laptops </a></div>
+        <div class="flex-none hidden md:inline-block cursor-pointer hover:bg-slate-500 p-2"><a href="./../../pages/navigation/books.html"> Books </a></div>
+        <div class="flex-none hidden md:inline-block cursor-pointer hover:bg-slate-500 p-2"><a href="./../../pages/navigation/customer-service.html"> Customer Service </a></div>
+        <div class="hidden md:inline-block flex-none cursor-pointer hover:bg-slate-500 p-2"><a href="./../../pages/navigation/electronics.html"> Electronics </a></div>
+        <div class="hidden md:inline-block flex-none cursor-pointer hover:bg-slate-500 p-2"><a href="./../../pages/navigation/home-and-kitchen.html"> Home & Kitchen</a></div>
+        <div class="hidden lg:inline-block flex-none cursor-pointer hover:bg-slate-500 p-2"><a href="./../../pages/navigation/computers.html"> Computers </a></div>
+        <div class="hidden lg:inline-block flex-none cursor-pointer hover:bg-slate-500 p-2"><a href="./../../pages/navigation/fashion.html"> Fashion </a></div>
+        <div class="hidden lg:inline-block flex-none cursor-pointer hover:bg-slate-500 p-2"><a href="./../../pages/navigation/toys.html"> Toys </a></div>
+        <div class="hidden lg:inline-block flex-none cursor-pointer hover:bg-slate-500 p-2 mr-8"><a href="./../../pages/navigation/sell.html"> Sell </a></div>
+      </nav>
+      <!-- CATEGORIES NAVIGATION BAR ENDS-->     
+    </header>
+
+    <main class="main" id="main">
+      <div class="product-sm-screen md:hidden flex-col bg-white m-10">
+        <div class="product-name text-3xl font-bold text-center">Phone</div>
+        <div class="carousel ">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="./../../img/tech/phone.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="./../../img/tech/phone.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="./../../img/tech/phone.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a> 
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="./../../img/tech/phone.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-price text-3xl font-bold text-center">₹76,999</div>
+        <div class="item-rating flex text-2xl text-yellow-400 justify-center items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+            <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+            <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+            <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+            <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+            <path fill="url(#40%)" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+          </svg>
+          <span class="text-black">4.4</span>               
+        </div>
+        <div class="product-description">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur deleniti perferendis eligendi, optio illo quae unde vitae sint. Soluta at aliquam atque optio corporis expedita asperiores, corrupti iure explicabo iusto?
+        </div>
+        <div class="buy flex mt-16 justify-between">
+          <button class="text-xl font-bold rounded-2xl bg-yellow-500 hover:bg-yellow-600 p-2">Buy Now</button>
+          <button class="text-xl font-bold rounded-2xl bg-yellow-500 hover:bg-yellow-600 p-2">Add To Cart</button>
+        </div>
+      </div>
+
+      <div class="product-md-screen hidden md:flex bg-white m-10">
+        <div class="carousel w-1/2">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="./../../img/tech/phone.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="./../../img/tech/phone.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="./../../img/tech/phone.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a> 
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="./../../img/tech/phone.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-info w-1/2 flex-col">
+          <div class="product-name text-3xl font-bold">Phone</div>
+          <div class="product-price text-3xl font-bold">₹76,999</div>
+          <div class="product-rating flex text-2xl text-yellow-400 items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+              <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+              <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+              <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+              <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+              <path fill="url(#40%)" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-black">4.4</span>               
+          </div>
+          <div class="product-description mt-4">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur deleniti perferendis eligendi, optio illo quae unde vitae sint. Soluta at aliquam atque optio corporis expedita asperiores, corrupti iure explicabo iusto? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus molestias officia consectetur quasi, esse nemo sunt vel ullam, tempore, nisi ipsa eaque maiores recusandae. Qui et maxime fuga exercitationem nam.
+          </div>
+          <div class="buy flex mt-16 justify-between">
+            <button class="text-xl font-bold rounded-2xl bg-yellow-500 hover:bg-yellow-600 p-2">Buy Now</button>
+            <button class="text-xl font-bold rounded-2xl bg-yellow-500 hover:bg-yellow-600 p-2">Add To Cart</button>
+          </div>
+        </div>
+        
+      </div>
+    </main>
+
+    <div id="canvas" class="canvas hidden h-screen w-screen bg-gray-600 static opacity-80">
+      <div class="logo hidden md:block ml-[400px] w-[100%-400px] h-screen flex-initial">
+        <img src="./../../img/ui/nile-logo.png" alt="" class="w-full h-full object-contain">
+      </div>
+    </div>
+
+    <div class="decimal-rating-svg">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+        <defs>
+          <linearGradient id="10%">
+            <stop offset="10%" stop-color="#facc15"/>
+            <stop offset="10%" stop-color="grey"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+        <defs>
+          <linearGradient id="20%">
+            <stop offset="20%" stop-color="#facc15"/>
+            <stop offset="20%" stop-color="grey"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+        <defs>
+          <linearGradient id="30%">
+            <stop offset="30%" stop-color="#facc15"/>
+            <stop offset="30%" stop-color="grey"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+        <defs>
+          <linearGradient id="40%">
+            <stop offset="40%" stop-color="#facc15"/>
+            <stop offset="40%" stop-color="grey"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+        <defs>
+          <linearGradient id="50%">
+            <stop offset="50%" stop-color="#facc15"/>
+            <stop offset="50%" stop-color="grey"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+        <defs>
+          <linearGradient id="60%">
+            <stop offset="60%" stop-color="#facc15"/>
+            <stop offset="60%" stop-color="grey"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+        <defs>
+          <linearGradient id="70%">
+            <stop offset="70%" stop-color="#facc15"/>
+            <stop offset="70%" stop-color="grey"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+        <defs>
+          <linearGradient id="80%">
+            <stop offset="80%" stop-color="#facc15"/>
+            <stop offset="80%" stop-color="grey"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+        <defs>
+          <linearGradient id="90%">
+            <stop offset="90%" stop-color="#facc15"/>
+            <stop offset="90%" stop-color="grey"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+  </div>
+</body>
+</html>
